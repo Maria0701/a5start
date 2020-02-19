@@ -1,3 +1,5 @@
-h1 {
-  color: red;
-}
+@import "mixins.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "main.scss";
+@import "blocks/header.scss";
