@@ -1,0 +1,32 @@
+.contacts {
+  @include not-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__link {
+  margin-left: 45px;
+  margin-right: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white-color;
+  text-decoration: none;
+  text-align: right;
+}
+
+.contacts__link--order {
+  //  @include button;
+  margin-left: 5px;
+  margin-right: 4px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts__link--phone svg {
+  margin-right: 5px;
+}
+
+.contacts__link--mail svg {
+  margin-right: 10px;
+}

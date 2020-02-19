@@ -8,10 +8,10 @@
   <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondenced-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondenced-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondenced-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondenced-Regular" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,37 +19,43 @@
       <include src="build/img/sprite_auto.svg"></include>
   </div>
   <header class="header">
-    <a class="logo header__logo">
-      <img src="img/logo.svg" alt="Smart Device" width="202" height="52">
-    </a>
-    <button class="menu-toggler header__menu-toggler">
-        <svg class="menu-toggler__icon" width="24" height="24"  aria-hidden="true" role="presentation"><use xlink:href="#icon-menu"></use></svg>
-    </button>
-    <ul class="contacts header__contacts">
-      <li>
-        <a class="contacts__item contacts__item--phone" href="mailto:info@sd.ru" title="Напишите в компанию по адресу">
-          <svg class="contacts__icon" width="19" height="14"  aria-hidden="true" role="presentation"><use xlink:href="#icon-envelope"></use></svg>
-          info@sd.ru
-        </a>
-      </li>
-      <li>
-        <a class="contacts__item contacts__item--phone" href="tel:+74950005252" title="Напишите в компанию по адресу">
-          <svg class="contacts__icon" width="18" height="18"  aria-hidden="true" role="presentation"><use xlink:href="#icon-phone"></use></svg>
-          +7 (495) 000 52 52
-        </a>
-      </li>
-      <li>
-        <a class="contacts__item contacts__item--order " href="#" title="Заказать звонок">Заказать звонок</a>
-      </li>
-    </ul>
+    <div class="header__wrapper">
+      <a class="logo header__logo">
+        <img src="img/logo.svg" alt="Smart Device" width="202" height="52">
+      </a>
+      <button class="menu-toggler header__menu-toggler">
+          <svg class="menu-toggler__icon" width="40" height="40"  aria-hidden="true" role="presentation"><use xlink:href="#icon-menu"></use></svg>
+      </button>
+      <ul class="contacts header__contacts">
+        <li class="contacts__item ">
+          <a class="contacts__link contacts__link--mail" href="mailto:info@sd.ru" title="Напишите в компанию по адресу">
+            <svg class="contacts__icon" width="19" height="14"  aria-hidden="true" role="presentation"><use xlink:href="#icon-envelope"></use></svg>
+            info@sd.ru
+          </a>
+        </li>
+        <li class="contacts__item ">
+          <a class="contacts__link contacts__link--phone" href="tel:+74950005252" title="Напишите в компанию по адресу">
+            <svg class="contacts__icon" width="18" height="18"  aria-hidden="true" role="presentation"><use xlink:href="#icon-phone"></use></svg>
+            +7 (495) 000 52 52
+          </a>
+        </li>
+        <li class="contacts__item ">
+          <a class="contacts__link contacts__link--order button" href="#" title="Заказать звонок">Заказать звонок</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <main>
     <section class="main-screen">
-      <h1 class="h1-header main-screen__header">Печатные платы</h1>
-      <p>производство и монтаж, поставка комплектующих</p>
-      <a href="#" title="Получить бесплатную консультацию">Получить бесплатную консультацию</a>
-      <p class="main-screen__remark">скролл вниз</p>
-      <img class="main-screen__image" alt="" src="/img/cards.png" width="705" height="515" />
+      <div class="main-screen__wrapper">
+        <div class="main-screen__text-wrapper">
+          <h1 class="h1-header main-screen__header">Печатные платы</h1>
+          <p class="main-screen__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="main-screen__readmore button" href="#" title="Получить бесплатную консультацию">Получить бесплатную консультацию</a>
+          <p class="main-screen__remark">скролл вниз</p>
+        </div>
+        <img class="main-screen__image" alt="" src="/img/cards.png" width="705" height="515" />
+      </div>
     </section>
     <section class="advantages">
       <div class="advantages__wrapper">

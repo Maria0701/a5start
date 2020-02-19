@@ -1,0 +1,17 @@
+.advantages__wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages__items {
+  @include not-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  width: calc(50% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+}
