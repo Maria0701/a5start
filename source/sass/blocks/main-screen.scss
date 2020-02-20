@@ -1,6 +1,7 @@
 .main-screen {
-  padding-top: 315px;
-  background-color: #1d1d1d;
+  background: url("../img/maskgroup.png");
+  background-color: #1b2a31;
+  background-size: cover;
 }
 
 .main-screen__wrapper {
@@ -8,9 +9,12 @@
   max-width: 1465px;
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 315px;
+  padding-bottom: 90px;
 
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .main-screen__text-wrapper {
@@ -35,13 +39,13 @@
 
 .main-screen__text {
   position: relative;
-  display: flex;
   padding-left: 100px;
   margin-top: 0;
   margin-bottom: 44px;
 
   font-size: 22px;
   line-height: 34px;
+  letter-spacing: -1px;
 
   color: $white-color;
 }
@@ -53,6 +57,7 @@
   left: 0;
   width: 68px;
   height: 3px;
+
   margin-left: 5px;
   margin-right: 28px;
 
@@ -60,14 +65,35 @@
 }
 
 .main-screen__readmore {
-  display: block;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   margin-left: 100px;
   margin-top: 0;
-  margin-bottom: 43px;
+  margin-bottom: 95px;
 
   font-size: 16px;
   line-height: 19px;
 
   background-color: $blue-color;
   border-color: $blue-color;
+}
+
+.main-screen__image {
+  position: absolute;
+  top: 29%;
+  right: -4%;
+}
+
+.main-screen__remark {
+  margin-left: 5px;
+
+  font-size: 14px;
+  line-height: 16px;
+  writing-mode: vertical-lr;
+  color: $white-color;
+
+  transform: rotate(180deg);
 }

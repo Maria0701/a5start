@@ -1,0 +1,38 @@
+.about__wrapper {
+  padding-left: 215px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 111px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url("../img/2005.png");
+  background-repeat: no-repeat;
+  background-position: 5px 44px;
+}
+
+.about__header {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__wrapper p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about__details {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+
+  color: $blue-color;
+  border-color: $blue-color;
+}

@@ -1,0 +1,93 @@
+.offers {
+  background-color: $dark-blue-color;
+}
+
+.offers__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 87px;
+  padding-bottom: 112px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offers__header {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white-color;
+}
+
+.offers__items {
+  @include not-list;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offers__item {
+  position: relative;
+  width: calc(100%/3 - 30px);
+  padding-top: percentage(370/715);
+
+  margin: 15px;
+
+  background-color: #26343d;
+}
+
+.offers__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.offers__link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-left: 43px;
+  padding-right: 135px;
+  padding-top: 51px;
+  padding-bottom: 51px;
+
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+
+  color: $white-color;
+  background-color: rgba(72, 72, 72, 0.8);
+}
+
+.offers__link-mark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: block;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: $blue-color;
+}
+
+.offers__icon {
+  width: 8px;
+  height: 16px;
+
+  color: $white-color;
+}

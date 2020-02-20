@@ -1,0 +1,12 @@
+.social__items {
+  @include not-list;
+  display: flex;
+}
+
+.social__item + .social__item {
+  margin-left: 15px;
+}
+
+.social__link {
+  color: $footer-text-color;
+}

@@ -1,21 +1,18 @@
-@mixin container-desk {
-  padding-left: 250px;
-  padding-right: 250px;
-}
-
 @mixin not-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .button {
+  display: inline-block;
+  vertical-align: bottom;
+
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 28px;
   padding-right: 28px;
 
-  //  font-size: 14px;
-  //  line-height: 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -24,6 +21,7 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: $white-color;
+  text-decoration: none;
 
   border: 1px solid $white-color;
   border-radius: 5px;

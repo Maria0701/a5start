@@ -1,0 +1,79 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  align-items: top;
+  margin-bottom: 40px;
+}
+
+.form__label-name {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  color: $white-color;
+}
+
+.form__input,
+.form__textarea {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  width: 100%;
+
+  font-family: inherit;;
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.form__label--text {
+  flex-basis: calc(50% - 30px);
+  flex-grow: 1;
+}
+
+.form__label--text + .form__label--text {
+  margin-left: 30px;
+}
+
+.form__textarea{
+  padding-bottom: 25px;
+}
+
+.form__label--textarea {
+  flex-basis: 100%;
+}
+
+.form__button {
+  width: 100%;
+  background-color: transparent;
+}
+
+.form__label--agreed {
+  padding-left: 9px;
+  padding-top: 13px;
+}
+
+.form__label-name--agreed {
+  position: relative;
+  top: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__input--agreed {
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $white-color;
+}
