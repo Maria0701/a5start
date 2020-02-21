@@ -3,10 +3,19 @@
   column-count: 2;
 }
 
+.footer-menu__item {
+
+}
 
 .footer-menu__link {
   font-size: 15px;
   line-height: 25px;
   text-decoration: none;
   color: $footer-text-color;
+  transition: $transition-color;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
 }

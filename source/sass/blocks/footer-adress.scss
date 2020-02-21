@@ -1,12 +1,11 @@
 .footer-adress__header {
-  padding-left: 20px;
 }
 
 .footer-adress__body {
-  padding-left: 20px;
-
   font-size: 15px;
   line-height: 25px;
+
+  color: $footer-text-color;
 }
 
 .footer-adress__phone {
@@ -15,4 +14,10 @@
 
   text-decoration: none;
   color: $footer-text-color;
+  transition: $transition-color;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
 }

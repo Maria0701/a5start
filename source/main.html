@@ -54,7 +54,9 @@
           <a class="main-screen__readmore button" href="#" title="Получить бесплатную консультацию">Получить бесплатную консультацию</a>
           <p class="main-screen__remark">скролл вниз</p>
         </div>
-        <img class="main-screen__image" alt="" src="/img/cards.png" width="705" height="515" />
+        <div class="main-screen__image-container">
+          <img class="main-screen__image" alt="" src="/img/cards.png" width="705" height="515" />
+        </div>
       </div>
     </section>
     <section class="advantages">
@@ -157,12 +159,12 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__top">
-      <div class="footer__top-wrapper">
-        <div class="footer__social social">
-          <a class="logo footer__logo">
-            <img src="img/logo.svg" alt="Smart Device" width="202" height="52">
+    <div class="footer__wrapper">
+      <div class="footer__social social">
+        <a class="logo footer__logo">
+          <svg class="logo__icon" width="202" height="52"  aria-hidden="true" role="img"><use xlink:href="#icon-logo"></use></svg>
           </a>
+          <p class="footer__bottom-text footer__bottom-text--company">1999-2018 SD Service Devices</p>
           <ul class="social__items">
             <li class="social__item">
               <a href="#" title="Присоединяйтесь к нам в FB" class="social__link social__link--fb">
@@ -205,15 +207,11 @@
             <a class="footer-adress__phone" href="tel:+79269260879">+7 (926) 926-08-79</a>
           </adress>
         </div>
+      <div class="footer__credentials">
+        <p class="footer__bottom-text">Все права защищены</p>
+        <p class="footer__bottom-text footer__bottom-text--confidential"><a class="footer__bottom-link" href="#" >Условия конфиденциальности</a></p>
+        <p class="footer__bottom-text"><a class="footer__bottom-link" href="#" >Developed by wow studio</a></p>
       </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer__bottom-wrapper">
-      <p class="footer__bottom-text">Все права защищены</p>
-      <p class="footer__bottom-text">1999-2018 SD Service Devices</p>
-      <a class="footer__bottom-link" href="#" >Условия конфиденциальности</a>
-      <a class="footer__bottom-link" href="#" >Developed by wow studio</a>
-    </div>
     </div>
   </footer>
 </body>

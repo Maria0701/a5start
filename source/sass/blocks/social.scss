@@ -9,4 +9,10 @@
 
 .social__link {
   color: $footer-text-color;
+  transition: $transition-color;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
 }
