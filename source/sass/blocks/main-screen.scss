@@ -22,7 +22,7 @@
 }
 
 .main-screen__text-wrapper {
-  max-width: 56%;
+  flex-basis: 56%;
   margin-right: auto;
 }
 
@@ -157,7 +157,7 @@
   }
 
   .main-screen__text-wrapper {
-    max-width: 60%;
+    flex-basis: 60%;
     margin-left: 63px;
     margin-top: 66px;
   }
@@ -225,5 +225,73 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-screen__btn--small {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-screen__wrapper {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-screen__image-container {
+    order: -1;
+
+    padding-top: percentage(320/301);
+  }
+
+  .main-screen__image-container-inner {
+    top: 22px;
+    background-image: url("../img/cards-320.png");
+    background-size: 90%;
+    background-position: 15px 0;
+  }
+
+  .main-screen__triangle--large {
+    right: -324px;
+    top: 43px;
+  }
+
+  .main-screen__triangle--small {
+    right: -102px;
+    top: 193px;
+  }
+
+  .main-screen__text-wrapper {
+    margin-top: -85px;
+  }
+
+  .main-screen__text-wrapper {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  .main-screen__header {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .main-screen__text {
+    margin-bottom: 39px;
+    font-size: 16px;
+    line-height: 156.8%;
+  }
+
+  .main-screen__readmore {
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .main-screen__btn--big {
+    display: none;
   }
 }

@@ -86,3 +86,9 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .contacts__link {
+    margin-left: 21px;
+  }
+}

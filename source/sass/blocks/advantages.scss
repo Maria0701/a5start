@@ -140,3 +140,39 @@
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  .advantages__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .advantages__items {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+    .advantages__icon {
+      margin-bottom: 5px;
+  }
+
+  .advantages__header {
+    padding-right: 15px;
+    margin-bottom: 7px;
+
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+}
