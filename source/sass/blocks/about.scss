@@ -44,3 +44,31 @@
   transform: rotate(-30deg);
   opacity: 0.3;
 }
+
+@media (max-width: 1023px) {
+  .about__wrapper {
+    padding-left: 212px;
+    padding-top: 0;
+    padding-bottom: 85px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+
+    background-image: url("../img/2005-750.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .about__wrapper p{
+    overflow: hidden;
+  }
+
+  .about__header {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+}

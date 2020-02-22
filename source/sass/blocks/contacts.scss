@@ -13,15 +13,28 @@
   color: $white-color;
   text-decoration: none;
   text-align: right;
+  transition: $transition-color;
+
+  &:hover,
+  &focus {
+    color: $blue-color;
+
+    .contacts__icon {
+      color: $white-color;
+    }
+  }
 }
 
 .contacts__link--order {
-  //  @include button;
   margin-left: 5px;
   margin-right: 4px;
 
   font-size: 14px;
   line-height: 16px;
+}
+
+.contacts__icon {
+  color: $blue-color;
 }
 
 .contacts__link--phone svg {
@@ -30,4 +43,46 @@
 
 .contacts__link--mail svg {
   margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .contacts__link {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contacts__text,
+  .contacts__link--order {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .contacts__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .contacts__link {
+    margin-left: 32px;
+    margin-right: 0px;
+  }
+
+  .contacts__link--mail svg,
+  .contacts__link--phone svg {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

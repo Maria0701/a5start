@@ -2,6 +2,9 @@
   background: url("../img/maskgroup.png");
   background-color: #1b2a31;
   background-size: cover;
+
+  color: $white-color;
+  overflow: hidden;
 }
 
 .main-screen__wrapper {
@@ -89,6 +92,7 @@
 
 .main-screen__image-container {
   position: relative;
+  z-index: 1;
   flex-grow: 1;
 
   padding-top: 36.05%;
@@ -123,16 +127,16 @@
 }
 
 .main-screen__triangle--large {
-  top: -23px;
-  left: 57px;
+  right: -23px;
+  top: 57px;
 
   width: 560px;
   height: 560px;
 }
 
 .main-screen__triangle--small {
-  left: 6px;
-  bottom: 11px;
+  right: 6px;
+  top: 192px;
 
   width: 327px;
   height: 327px;
@@ -140,7 +144,86 @@
 
 @media (max-width: 1600px) {
   .main-screen__image-container {
-    margin-right: -25px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-screen__wrapper {
+    padding-right: 25px;
+    padding-left: 22px;
+    padding-top: 123px;
+    padding-bottom: 70px;
+  }
+
+  .main-screen__text-wrapper {
+    max-width: 60%;
+    margin-left: 63px;
+    margin-top: 66px;
+  }
+
+  .main-screen__header {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .main-screen__readmore {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-left: 53px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.9px;
+  }
+
+  .main-screen__text {
+    padding-left: 55px;
+    margin-bottom: 55px;
+    font-size: 18px;
+    line-height: 29px;
+
+    &::before {
+      width: 35px;
+    }
+  }
+
+  .main-screen__triangle--large {
+    right: -166px;
+    top: 55px;
+    width: 440px;
+    height: 440px;
+  }
+
+  .main-screen__triangle--small {
+    right: 54px;
+    top: 226px;
+    width: 260px;
+    height: 260px;
+  }
+
+  .main-screen__image-container {
+    left: -39px;
+  }
+
+  .main-screen__image-container-inner {
+    left:  28px;
+    top: 47px;
+    background-image: url("../img/cards-750.png");
+  }
+
+  .main-screen__remark {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
   }
 }

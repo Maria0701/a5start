@@ -1,6 +1,14 @@
 .menu-toggler {
-  margin-right: auto;
   color: $white-color;
   background-color: transparent;
   border: 0;
+}
+
+@media (max-width: 1023px) {
+  .menu-toggler {
+    width: 37px;
+    height: 37px;
+
+    margin-top: -16px;
+  }
 }
