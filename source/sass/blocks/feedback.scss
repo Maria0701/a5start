@@ -4,6 +4,9 @@
 
 .feedback__wrapper {
   position: relative;
+
+  display:flex;
+
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 91px;
@@ -11,9 +14,19 @@
   max-width: $max-desktop-width-main;
   margin-left: auto;
   margin-right: auto;
+
+  color: $white-color;
+}
+
+.feedback__wrapper::before {
+  content: "";
+  z-index: 1;
+  width: 50%;
+  margin-left: -6px;
+
   background-image: url("../img/paper_airplane.png");
   background-repeat: no-repeat;
-  background-position: 6px 42%;
+  background-position: 0 34%;
 }
 
 .feedback__form-wrapper {
@@ -39,4 +52,18 @@
   margin-top: 0;
   margin-bottom: 50px;
   color: $white-color;
+}
+
+.feedback__triangle--large {
+  left: -100px;
+  top: 95px;
+  width: 585px;
+  height: 490px;
+}
+
+.feedback__triangle--small {
+  top: 296px;
+  left: -138px;
+  width: 326px;
+  height: 286px;
 }

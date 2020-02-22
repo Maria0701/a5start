@@ -6,9 +6,10 @@
 
 .main-screen__wrapper {
   position: relative;
-  max-width: 1465px;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: flex;
+  max-width: $max-desktop-width;
+  padding-right: 25px;
+  padding-left: 22px;
   padding-top: 315px;
   padding-bottom: 90px;
 
@@ -18,7 +19,7 @@
 }
 
 .main-screen__text-wrapper {
-  max-width: 51%;
+  max-width: 56%;
   margin-right: auto;
 }
 
@@ -39,13 +40,12 @@
 
 .main-screen__text {
   position: relative;
-  padding-left: 100px;
+  padding-left: 98px;
   margin-top: 0;
   margin-bottom: 44px;
 
   font-size: 22px;
   line-height: 34px;
-  letter-spacing: -1px;
 
   color: $white-color;
 }
@@ -55,7 +55,7 @@
   position: absolute;
   top: 15px;
   left: 0;
-  width: 68px;
+  width: 65px;
   height: 3px;
 
   margin-left: 5px;
@@ -83,8 +83,32 @@
 
 .main-screen__image {
   position: absolute;
-  top: 29%;
-  right: -4%;
+  left: 44px;
+  top: 0;
+}
+
+.main-screen__image-container {
+  position: relative;
+  flex-grow: 1;
+
+  padding-top: 36.05%;
+  margin-left: 0;
+  margin-right: -80px;
+  margin-top: -57px;
+
+  color: $white-color;
+}
+
+.main-screen__image-container-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background-image: url("../img/cards.png");
+  background-repeat: no-repeat;
+  background-clip: border-box;
 }
 
 .main-screen__remark {
@@ -96,4 +120,27 @@
   color: $white-color;
 
   transform: rotate(180deg);
+}
+
+.main-screen__triangle--large {
+  top: -23px;
+  left: 57px;
+
+  width: 560px;
+  height: 560px;
+}
+
+.main-screen__triangle--small {
+  left: 6px;
+  bottom: 11px;
+
+  width: 327px;
+  height: 327px;
+}
+
+@media (max-width: 1600px) {
+  .main-screen__image-container {
+    margin-right: -25px;
+    overflow: hidden;
+  }
 }

@@ -1,4 +1,5 @@
 .advantages__wrapper {
+  position: relative;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 95px;
@@ -25,6 +26,7 @@
   margin-top: 15px;
   margin-bottom: 15px;
 
+  background-color: $white-color;
   border: 1px solid $gray-color;
   border-left: 3px solid $blue-color;
 }
@@ -71,4 +73,27 @@
 .advantages__text {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.advantages__triangle--large {
+  top: 50%;
+  left: 26%;
+  z-index: -1;
+  opacity: 0.3;
+  transform: rotate(30deg);
+}
+
+.advantages__triangle--first {
+  bottom: 71px;
+  right: -190px;
+  z-index: -1;
+  opacity: 0.3;
+  transform: rotate(60deg);
+}
+
+.advantages__triangle--second {
+  left: -190px;
+  z-index: -1;
+  opacity: 0.3;
+  transform: rotate(-60deg);
 }

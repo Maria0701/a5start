@@ -26,3 +26,9 @@
   border: 1px solid $white-color;
   border-radius: 5px;
 }
+
+.icon__triangle {
+  position: absolute;
+  z-index: 0;
+  fill: transparent;
+}
