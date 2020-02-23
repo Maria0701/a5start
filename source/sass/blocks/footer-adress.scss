@@ -2,10 +2,13 @@
 }
 
 .footer-adress__body {
+  max-height: 0;
   font-size: 15px;
   line-height: 25px;
 
   color: $footer-text-color;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .footer-adress__phone {

@@ -131,3 +131,35 @@
     padding-top: 40px;
   }
 }
+
+@media (max-width: 768px) {
+  .offers__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+  }
+
+  .offers__header {
+    margin-left: 10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .offers__items {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .offers__item {
+    padding-top: percentage(232/290);
+    margin-bottom: 10px;
+  }
+
+  .offers__link {
+    padding-left: 35px;
+    padding-right: 30%;
+    padding-top: 20px;
+  }
+}

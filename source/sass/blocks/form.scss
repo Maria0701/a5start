@@ -41,9 +41,7 @@
   flex-grow: 1;
 }
 
-.form__label--text + .form__label--text {
-  margin-left: 30px;
-}
+
 
 .form__textarea{
   padding-bottom: 25px;
@@ -86,5 +84,34 @@
 
   .form__label--textarea {
     margin-bottom: 47px;
+  }
+}
+
+@media (min-width: 769px) {
+  .form__label--text + .form__label--text {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__label {
+    margin-bottom: 27px;
+  }
+
+  .form__label--text {
+    flex-basis: 100%;
+  }
+
+  .form__label--textarea {
+    margin-bottom: 32px;
+  }
+
+  .form__textarea {
+    padding-bottom: 10px;
+  }
+
+  .form__label--agreed {
+    padding-left: 0;
+    padding-top: 5px;
   }
 }

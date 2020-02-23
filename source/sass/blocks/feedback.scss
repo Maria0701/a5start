@@ -110,3 +110,27 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .feedback__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .feedback__header {
+    margin-bottom: 13px;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .feedback__form-wrapper {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .feedback__remark {
+    margin-bottom: 24px;
+  }
+}

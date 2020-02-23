@@ -49,16 +49,11 @@
     background-position: 5px 44px;
   }
 }
+
 @media (max-width: 1023px) {
   .about__wrapper {
     padding-top: 0;
     padding-bottom: 85px;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
   }
 
   .about__wrapper p{
@@ -72,7 +67,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 768px) {
   .about__wrapper {
     padding-left: 212px;
 
@@ -82,8 +77,21 @@
   }
 }
 
-@media (max-width) {
+@media (max-width: 767px) {
   .about__wrapper {
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 18px;
+    padding-bottom: 67px;
+  }
+
+  .about__header {
+    margin-bottom: 17px;
+
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .about__details {
+    margin-top: 8px;
   }
 }

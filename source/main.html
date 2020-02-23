@@ -94,13 +94,15 @@
     </section>
     <section class="about">
       <div class="about__wrapper">
-        <h2 class="about__header">О компании</h2>
-        <p>
-          Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-        </p>
-        <p>
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-        </p>
+        <h2 class="about__header ">О компании</h2>
+        <div class="js-clip">
+          <p>
+            Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+          </p>
+          <p>
+            Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+          </p>
+        </div>
         <a class="about__details button" href="#">Подробнее</a>
         <svg class="icon__triangle about__triangle about__triangle--large" width="585" height="490"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints"></use></svg>
       </div>
@@ -163,7 +165,7 @@
             </label>
             <label class="form__label form__label--textarea">
               <span class="form__label-name">Ваш вопрос</span>
-              <textarea class="form__textarea" name="message" rows="7" cols="10" required></textarea>
+              <textarea class="form__textarea" name="message" rows="5" cols="10" required></textarea>
             </label>
             <div class="form__label form__label--text">
               <input type="submit" value="Задать вопрос" class="button form__button" required checked />
@@ -211,7 +213,8 @@
         </div>
         <div class="footer__menu footer-menu">
           <h2 class="footer__header footer-menu__header">Разделы сайта</h2>
-          <ul class="footer-menu__items">
+          <button class="footer__button js-closed"><span></span></button>
+          <ul class="footer-menu__items js-hidden">
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукты</a></li>
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">Производство печатных плат</a></li>
@@ -222,7 +225,7 @@
           </ul>
         </div>
         <div class="footer__adress">
-          <h2 class="footer__header footer-adress__header">Наш офис</h2>
+          <h2 class="footer__header footer-adress__header">Наш офис</h2> <button class="footer__button js-closed"><span></span></button>
           <adress class="footer-adress__body">
             г. Мытищи, Олимпийский проспект, д.10
             <a class="footer-adress__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -237,5 +240,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
