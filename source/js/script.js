@@ -10,3 +10,32 @@
     elementToClip.innerHTML = text + elipsis;
   }
 }());
+
+(function () {
+  var footerButtons = document.querySelectorAll('.footer__button ');
+  var closeAllButtons = function () {
+    footerButtons.forEach(function (button) {
+      if (!button.classList.contains('js-closed')) {
+        button.classList.add('js-closed');
+        button.nextElementSibling.style.maxHeight = null;
+      }
+    });
+  };
+
+  footerButtons.forEach(function (item) {
+    item.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      var infoElement = item.nextElementSibling;
+      if (!item.classList.contains('js-closed')) {
+        item.classList.add('js-closed');
+        infoElement.style.maxHeight = null;
+        return;
+      }
+
+      closeAllButtons();
+      item.classList.remove('js-closed');
+      infoElement.style.maxHeight = infoElement.scrollHeight + 'px';
+    });
+  });
+
+}());

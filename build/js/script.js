@@ -35,7 +35,6 @@ console.log(infoElement.scrollHeight);
 
       closeAllButtons();
       item.classList.remove('js-closed');
-      console.log(infoElement.scrollHeight);
       infoElement.style.maxHeight = infoElement.scrollHeight + 'px';
     });
   });
