@@ -54,9 +54,9 @@
         <div class="main-screen__text-wrapper">
           <h1 class="h1-header main-screen__header">Печатные платы</h1>
           <p class="main-screen__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="main-screen__readmore button" href="#" title="Получить бесплатную консультацию"><span class="main-screen__btn main-screen__btn--big js-popup-open">Получить бесплатную консультацию</span>
+          <a class="main-screen__readmore button js-scroll" href="#form" title="Получить бесплатную консультацию"><span class="main-screen__btn main-screen__btn--big">Получить бесплатную консультацию</span>
           <span class="main-screen__btn main-screen__btn--small">Бесплатная консультация</span></a>
-          <p class="main-screen__remark">скролл вниз</p>
+          <a href="#form" class="main-screen__remark js-scroll">скролл вниз</a>
         </div>
         <div class="main-screen__image-container">
           <div class="main-screen__image-container-inner"></div>
@@ -155,22 +155,22 @@
       </div>
     </section>
     <section class="feedback">
-      <div class="feedback__wrapper">
+      <div class="feedback__wrapper" id="form">
         <div class="feedback__form-wrapper">
           <h2 class="feedback__header">Остались вопросы? Задайте их нам!</h2>
           <p class="feedback__remark">Мы проконсультируем Вас бесплатно </p>
           <form class="feedback__form form" method="post" action="#">
             <label class="form__label form__label--text">
               <span class="visually-hidden">Имя</span>
-              <input class="form__input" type="text" placeholder="Имя" name="name" required="">
+              <input class="form__input" type="text" minlength="3" maxlength="20" placeholder="Имя" name="name" required="">
             </label>
             <label class="form__label form__label--text">
               <span class="visually-hidden">Телефон</span>
-              <input class="form__input" placeholder="Телефон" type="text" name="phone" required="">
+              <input class="form__input js-phone" placeholder="Телефон" type="text" minlength="18" maxlength="18" name="phone" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
             </label>
             <label class="form__label form__label--textarea">
               <span class="visually-hidden">Ваш вопрос</span>
-              <textarea class="form__textarea" name="message" rows="5" cols="10" placeholder="Ваш вопрос" required=""></textarea>
+              <textarea class="form__textarea" name="message" rows="5" cols="10" minlength="6" maxlength="270" placeholder="Ваш вопрос" required=""></textarea>
             </label>
             <div class="form__label form__label--text">
               <input type="submit" value="Задать вопрос" class="button form__button" required="" checked="">
@@ -254,16 +254,16 @@
       <p class="popup__remark">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="popup__form form" method="post" action="#">
         <label class="form__label popup__label form__label--text">
-          <span class="visually-hidden">Имя</span>
+          <span class="visually-hidden" minlength="1" maxlength="20">Имя</span>
           <input class="form__input" type="text" placeholder="Имя" name="name" required="">
         </label>
         <label class="form__label popup__label form__label--text">
           <span class="visually-hidden">Телефон</span>
-          <input class="form__input" placeholder="Телефон" type="text" name="phone" required="">
+          <input class="form__input js-phone" minlength="18" maxlength="18" placeholder="Телефон" type="text" name="phone" required="" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}">
         </label>
         <label class="form__label popup__label form__label--textarea">
           <span class="visually-hidden">Ваш вопрос</span>
-          <textarea class="form__textarea" name="message" rows="4" cols="10" placeholder="Ваш вопрос" required=""></textarea>
+          <textarea class="form__textarea" name="message" rows="4" cols="10" placeholder="Ваш вопрос" required="" minlength="6" maxlength="270"></textarea>
         </label>
         <div class="form__label popup__label form__label--text">
           <input type="submit" value="Отправить" class="button form__button" required="" checked="">

@@ -122,12 +122,14 @@
 }
 
 .main-screen__remark {
+  display: block;
   margin-left: 5px;
 
   font-size: 14px;
   line-height: 16px;
   writing-mode: vertical-lr;
   color: $white-color;
+  text-decoration: none;
 
   transform: rotate(180deg);
 }
