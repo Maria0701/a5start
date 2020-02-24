@@ -228,3 +228,17 @@
   window.maskPhoneNumper(form, false);
   window.setLocalStorage(form);
 })();
+
+(function () {
+  var scrollElements = document.querySelectorAll('.js-scroll');
+  scrollElements.forEach(function (it) {
+    var idOfTarget = it.getAttribute('href').substr(1);
+    it.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      document.querySelector('#' + idOfTarget).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+})();
