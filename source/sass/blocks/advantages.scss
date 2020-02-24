@@ -1,3 +1,4 @@
+
 .advantages__wrapper {
   position: relative;
   padding-left: 25px;
@@ -7,7 +8,6 @@
   max-width: $max-desktop-width-main;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 
 .advantages__items {
@@ -77,20 +77,19 @@
 }
 
 .advantages__triangle--large {
-  top: 50%;
-  left: 26%;
+  top: 30.5%;
+  left: 34.5%;
   z-index: -1;
   opacity: 0.3;
   transform: rotate(30deg);
 }
 
 .advantages__triangle--first {
-  bottom: 82px;
-  right: -326px;
+  bottom: 595px;
+  right: 8px;
   z-index: -1;
-  width: 260px;
-  height: 260px;
   opacity: 0.09;
+  transform: rotate(0deg);
 }
 
 .advantages__triangle--second {
@@ -103,10 +102,15 @@
 
 @media (max-width: 1023px) {
   .advantages__wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .advantages__items {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .advantages__item {
@@ -129,8 +133,8 @@
   }
 
   .advantages__triangle--large {
-    top: 48%;
-    left: 37%;
+    top: 16%;
+    left: 37.5%;
     width: 700px;
     height: 700px;
   }
@@ -143,17 +147,20 @@
 
 @media (max-width: 767px) {
   .advantages__wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 33px;
   }
 
   .advantages__items {
     flex-direction: column;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
   .advantages__item {
-    padding-right: 15px;
-    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-bottom: 25px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -165,12 +172,12 @@
   }
 
     .advantages__icon {
-      margin-bottom: 5px;
+      margin-bottom: 7px;
   }
 
   .advantages__header {
     padding-right: 15px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 
     font-size: 20px;
     line-height: 140.62%;

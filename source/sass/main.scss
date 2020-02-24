@@ -26,7 +26,8 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus) {
+.visually-hidden:not(:focus),
+[type="checkbox"] {
   position: absolute;
 
   width: 1px;
@@ -39,5 +40,20 @@ img {
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .js-hidden {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 2s ease-in-out;
+  }
+}
+
+.advantage-decoration {
+  position: relative;
   overflow: hidden;
 }

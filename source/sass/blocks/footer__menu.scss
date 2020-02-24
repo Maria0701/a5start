@@ -1,10 +1,7 @@
 .footer-menu__items {
   @include not-list;
   column-count: 2;
-  max-height: 0;
-
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: height 2s ease-in-out;
 }
 
 .footer-menu__link {
@@ -23,6 +20,11 @@
 @media (min-width: 1024px) {
   .footer-menu__header {
     padding-left: 70px;
+  }
+
+  .footer-menu__items {
+    padding-top: 6px;
+    padding-bottom: 30px;
   }
 
   .footer-menu__item {

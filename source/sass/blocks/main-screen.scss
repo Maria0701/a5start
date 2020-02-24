@@ -22,6 +22,7 @@
 }
 
 .main-screen__text-wrapper {
+  z-index: 2;
   flex-basis: 56%;
   margin-right: auto;
 }
@@ -82,6 +83,10 @@
 
   background-color: $blue-color;
   border-color: $blue-color;
+}
+
+.main-screen__readmore:hover {
+  color: $blue-color;
 }
 
 .main-screen__image {
@@ -153,7 +158,7 @@
     padding-right: 25px;
     padding-left: 22px;
     padding-top: 123px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
   }
 
   .main-screen__text-wrapper {
@@ -250,8 +255,8 @@
   .main-screen__image-container-inner {
     top: 22px;
     background-image: url("../img/cards-320.png");
-    background-size: 90%;
-    background-position: 15px 0;
+    background-size: 87%;
+    background-position: 22px 3px;
   }
 
   .main-screen__triangle--large {
@@ -265,10 +270,7 @@
   }
 
   .main-screen__text-wrapper {
-    margin-top: -85px;
-  }
-
-  .main-screen__text-wrapper {
+    margin-top: -88px;
     flex-basis: 100%;
     margin-left: 0;
   }
@@ -279,7 +281,8 @@
   }
 
   .main-screen__text {
-    margin-bottom: 39px;
+    padding-left: 51px;
+    margin-bottom: 44px;
     font-size: 16px;
     line-height: 156.8%;
   }

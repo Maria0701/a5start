@@ -21,7 +21,10 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="logo header__logo">
-        <img src="img/logo.svg" alt="Smart Device" width="202" height="52">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/logo-small.svg" />
+          <img src="img/logo.svg" width="52" height="52">
+        </picture>
       </a>
       <button class="menu-toggler header__menu-toggler">
           <svg class="menu-toggler__icon" width="40" height="40"  aria-hidden="true" role="presentation"><use xlink:href="#icon-menu"></use></svg>
@@ -62,10 +65,11 @@
         <svg class="icon__triangle main-screen__triangle main-screen__triangle--small" width="335" height="335"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints-sm"></use></svg>
       </div>
     </section>
+    <div class="advantage-decoration">
+      <svg class="icon__triangle advantages__triangle advantages__triangle--large" width="585" height="490"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints"></use></svg>
+      <svg class="icon__triangle advantages__triangle advantages__triangle--first" width="260" height="260"  aria-hidden="true" role="presentation"><use xlink:href="#icon-triangle"></use></svg>
     <section class="advantages">
       <div class="advantages__wrapper">
-        <svg class="icon__triangle advantages__triangle advantages__triangle--large" width="585" height="490"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints"></use></svg>
-        <svg class="icon__triangle advantages__triangle advantages__triangle--first" width="260" height="260"  aria-hidden="true" role="presentation"><use xlink:href="#icon-triangle"></use></svg>
         <svg class="icon__triangle advantages__triangle advantages__triangle--second" width="227" height="274"  aria-hidden="true" role="presentation"><use xlink:href="#icon-triangle"></use></svg>
         <h2 class="visually-hidden">Преимущества компании</h2>
         <ul class="advantages__items">
@@ -77,7 +81,7 @@
           <li class="advantages__item">
             <svg class="advantages__icon" width="35" height="35"  aria-hidden="true" role="presentation"><use xlink:href="#icon-people"></use></svg>
             <h3 class="advantages__header">Крупные поставщики</h3>
-            <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+            <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__icon" width="36" height="31"  aria-hidden="true" role="presentation"><use xlink:href="#icon-hat"></use></svg>
@@ -107,6 +111,7 @@
         <svg class="icon__triangle about__triangle about__triangle--large" width="585" height="490"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints"></use></svg>
       </div>
     </section>
+  </div>
     <section class="offers">
       <div class="offers__wrapper">
         <h2 class="offers__header">Service Device предлагает следующие товары и услуги</h2>
@@ -116,7 +121,7 @@
               <source media="(min-width: 1024px)" srcset="../img/goods-1.jpg" />
               <source media="(min-width: 750px)" srcset="../img/goods-1-750.jpg" />
               <img  class="offers__img" src="../img/goods-1-320.jpg" alt="" />
-              </picture>
+            </picture>
             <a class="offers__link" href="#" title="Производство печатных плат">
               Производство печатных плат
             </a>
@@ -156,22 +161,22 @@
           <p class="feedback__remark">Мы проконсультируем Вас бесплатно </p>
           <form  class="feedback__form form" method="post" action="#">
             <label class="form__label form__label--text">
-              <span class="form__label-name">Имя</span>
-              <input class="form__input" type="text" name="name" required />
+              <span class="visually-hidden">Имя</span>
+              <input class="form__input" type="text" placeholder="Имя" name="name" required />
             </label>
             <label class="form__label form__label--text">
-              <span class="form__label-name">Телефон</span>
-              <input class="form__input" type="text" name="phone" required />
+              <span class="visually-hidden">Телефон</span>
+              <input class="form__input" placeholder="Телефон" type="text" name="phone" required />
             </label>
             <label class="form__label form__label--textarea">
-              <span class="form__label-name">Ваш вопрос</span>
-              <textarea class="form__textarea" name="message" rows="5" cols="10" required></textarea>
+              <span class="visually-hidden">Ваш вопрос</span>
+              <textarea class="form__textarea" name="message" rows="5" cols="10" placeholder="Ваш вопрос" required></textarea>
             </label>
             <div class="form__label form__label--text">
               <input type="submit" value="Задать вопрос" class="button form__button" required checked />
             </div>
             <label class="form__label form__label--agreed form__label--text">
-              <input class="form__input form__input--agreed" type="check" name="agreed" required />
+              <input class="form__input form__input--agreed" type="checkbox" name="agreed" required checked/>
               <span class="form__label-name form__label-name--agreed">Я согласен на обработку персональных данных</span>
             </label>
           </form>
@@ -226,7 +231,7 @@
         </div>
         <div class="footer__adress">
           <h2 class="footer__header footer-adress__header">Наш офис</h2> <button class="footer__button js-closed"><span></span></button>
-          <adress class="footer-adress__body">
+          <adress class="footer-adress__body js-hidden">
             г. Мытищи, Олимпийский проспект, д.10
             <a class="footer-adress__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
             <a class="footer-adress__phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
@@ -240,6 +245,33 @@
       </div>
     </div>
   </footer>
+  <div class="popup js-popup-hidden">
+    <div class="popup__wrapper">
+      <h2 class="popup__header">Закажите звонок</h2>
+      <p class="popup__remark">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form  class="popup__form form" method="post" action="#">
+        <label class="form__label popup__label form__label--text">
+          <span class="visually-hidden">Имя</span>
+          <input class="form__input" type="text" placeholder="Имя" name="name" required />
+        </label>
+        <label class="form__label popup__label form__label--text">
+          <span class="visually-hidden">Телефон</span>
+          <input class="form__input" placeholder="Телефон" type="text" name="phone" required />
+        </label>
+        <label class="form__label popup__label form__label--textarea">
+          <span class="visually-hidden">Ваш вопрос</span>
+          <textarea class="form__textarea" name="message" rows="5" cols="10" placeholder="Ваш вопрос" required></textarea>
+        </label>
+        <div class="form__label popup__label form__label--text">
+          <input type="submit" value="Задать вопрос" class="button form__button" required checked />
+        </div>
+        <label class="form__label popup__label form__label--agreed form__label--text">
+          <input class="form__input form__input--agreed" type="checkbox" name="agreed" required checked/>
+          <span class="form__label-name form__label-name--agreed">Я согласен на обработку персональных данных</span>
+        </label>
+      </form>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>

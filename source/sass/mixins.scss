@@ -25,6 +25,12 @@
 
   border: 1px solid $white-color;
   border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+  border-color: $blue-color;
+  background-color: $white-color;
 }
 
 .icon__triangle {

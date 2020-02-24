@@ -17,7 +17,7 @@
     footerButtons.forEach(function (button) {
       if (!button.classList.contains('js-closed')) {
         button.classList.add('js-closed');
-        button.nextElementSibling.style.maxHeight = null;
+        button.nextElementSibling.classList.add('js-hidden');
       }
     });
   };
@@ -28,13 +28,13 @@
       var infoElement = item.nextElementSibling;
       if (!item.classList.contains('js-closed')) {
         item.classList.add('js-closed');
-        infoElement.style.maxHeight = null;
+        infoElement.classList.remove('js-hidden');
         return;
       }
 
       closeAllButtons();
       item.classList.remove('js-closed');
-      infoElement.style.maxHeight = infoElement.scrollHeight + 'px';
+      infoElement.classList.add('js-hidden');
     });
   });
 

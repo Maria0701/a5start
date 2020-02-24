@@ -3,8 +3,6 @@
   background-color: $footer-bgcolor;
 }
 
-
-
 .footer__wrapper {
   position: relative;
 
@@ -28,6 +26,7 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: .7px;
   text-transform: uppercase;
 
   color: $dark-blue-color;
@@ -190,14 +189,16 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer__social {
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 52px;
   }
 
   .footer__wrapper {
     padding-top: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .footer-menu {
@@ -215,10 +216,28 @@
     flex-basis: 100%;
   }
 
+  .footer__adress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    right: -15px;
+    width: calc(100% + 30px);
+    height: 1px;
+    background-color: rgba(98, 105, 98, 0.2);
+  }
+
   .footer__credentials {
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+  }
+
+  .footer__credentials::after,
+  .footer__social::after {
+    left: -15px;
+    right: -15px;
+    width: calc(100% + 30px);
   }
 
   .footer__bottom-text--confidential {
@@ -231,8 +250,8 @@
 
   .footer__button {
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: 32px;
+    right: 1px;
     width: 16px;
     height: 16px;
     margin: 0;
@@ -268,5 +287,10 @@
     width: 1px;
     height: 16px;
     background-color: #c4c4c4;;
+  }
+
+  .footer-menu, .footer__adress {
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 }

@@ -1,0 +1,35 @@
+.popup {
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  z-index: 5;
+  max-width: 490px;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-top: 33px;
+  padding-bottom: 36px;
+  color: $white-color;
+  background-color: $blue-color;
+
+  transform: translateX(-50%);
+}
+
+.popup__header {
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+}
+
+.popup__remark {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.popup__label {
+  flex-basis: 100%;
+}
+
+.popup__label.form__label--text {
+  margin-left: 0;
+}

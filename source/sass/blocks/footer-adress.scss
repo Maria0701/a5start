@@ -1,14 +1,11 @@
-.footer-adress__header {
-}
-
 .footer-adress__body {
-  max-height: 0;
+  display: block;
+
   font-size: 15px;
   line-height: 25px;
 
   color: $footer-text-color;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: height 2s ease-in-out;
 }
 
 .footer-adress__phone {
@@ -21,5 +18,12 @@
   &:hover,
   &:focus {
     color: $blue-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-adress__body {
+    padding-top: 6px;
+    padding-bottom: 30px;
   }
 }
