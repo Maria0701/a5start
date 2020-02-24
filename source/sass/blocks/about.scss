@@ -36,7 +36,8 @@
   color: $blue-color;
   border-color: $blue-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white-color;
     background-color: $blue-color;
   }

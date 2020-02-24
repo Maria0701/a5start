@@ -1,13 +1,16 @@
 .popup {
   position: fixed;
-  top: 150px;
+  top: 136px;
   left: 50%;
   z-index: 5;
+  display: none;
+
   max-width: 490px;
   padding-left: 39px;
   padding-right: 39px;
   padding-top: 33px;
   padding-bottom: 36px;
+
   color: $white-color;
   background-color: $blue-color;
 
@@ -15,6 +18,8 @@
 }
 
 .popup__header {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-family: $roboto;
   font-weight: normal;
   font-size: 28px;
@@ -22,14 +27,61 @@
 }
 
 .popup__remark {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .popup__label {
   flex-basis: 100%;
+  margin-bottom: 27px;
 }
 
 .popup__label.form__label--text {
   margin-left: 0;
+}
+
+.popup__label.form__label--textarea {
+  margin-bottom: 30px;
+}
+
+.popup__label.form__label--agreed {
+  padding-left: 4px;
+  padding-right: 30px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.popup__label .form__label-name--agreed {
+  padding-left: 20px;
+}
+
+.popup__close {
+	position: absolute;
+	top: 15px;
+	right: 46px;
+	display: block;
+	height: 17px;
+	width: 17px;
+  background-color: transparent;
+  border: 0;
+}
+
+
+.js-popup-show {
+  display: block;
+}
+
+.js-popup-show ~ .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }

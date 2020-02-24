@@ -43,7 +43,7 @@
           </a>
         </li>
         <li class="contacts__item ">
-          <a class="contacts__link contacts__link--order button" href="#" title="Заказать звонок">Заказать звонок</a>
+          <a class="contacts__link contacts__link--order button js-popup-open" href="#" title="Заказать звонок">Заказать звонок</a>
         </li>
       </ul>
     </div>
@@ -54,7 +54,7 @@
         <div class="main-screen__text-wrapper">
           <h1 class="h1-header main-screen__header">Печатные платы</h1>
           <p class="main-screen__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="main-screen__readmore button" href="#" title="Получить бесплатную консультацию"><span class="main-screen__btn main-screen__btn--big">Получить бесплатную консультацию</span>
+          <a class="main-screen__readmore button" href="#" title="Получить бесплатную консультацию"><span class="main-screen__btn main-screen__btn--big js-popup-open">Получить бесплатную консультацию</span>
           <span class="main-screen__btn main-screen__btn--small">Бесплатная консультация</span></a>
           <p class="main-screen__remark">скролл вниз</p>
         </div>
@@ -245,8 +245,11 @@
       </div>
     </div>
   </footer>
-  <div class="popup js-popup-hidden">
+  <div class="popup">
     <div class="popup__wrapper">
+      <button class="popup__close">
+        <svg class="popup__icon" width="20" height="20"  aria-hidden="true" role="presentation"><use xlink:href="#icon-close"></use></svg>
+      </button>
       <h2 class="popup__header">Закажите звонок</h2>
       <p class="popup__remark">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form  class="popup__form form" method="post" action="#">
@@ -260,10 +263,10 @@
         </label>
         <label class="form__label popup__label form__label--textarea">
           <span class="visually-hidden">Ваш вопрос</span>
-          <textarea class="form__textarea" name="message" rows="5" cols="10" placeholder="Ваш вопрос" required></textarea>
+          <textarea class="form__textarea" name="message" rows="4" cols="10" placeholder="Ваш вопрос" required></textarea>
         </label>
         <div class="form__label popup__label form__label--text">
-          <input type="submit" value="Задать вопрос" class="button form__button" required checked />
+          <input type="submit" value="Отправить" class="button form__button" required checked />
         </div>
         <label class="form__label popup__label form__label--agreed form__label--text">
           <input class="form__input form__input--agreed" type="checkbox" name="agreed" required checked/>
@@ -272,6 +275,7 @@
       </form>
     </div>
   </div>
+  <div class="overlay"></div>
   <script src="js/script.js"></script>
 </body>
 </html>

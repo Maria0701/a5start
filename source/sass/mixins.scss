@@ -28,7 +28,8 @@
   transition: all 0.4s ease-in-out;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   border-color: $blue-color;
   background-color: $white-color;
 }

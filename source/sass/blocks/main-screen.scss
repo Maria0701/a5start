@@ -85,7 +85,8 @@
   border-color: $blue-color;
 }
 
-.main-screen__readmore:hover {
+.main-screen__readmore:hover,
+.main-screen__readmore:focus {
   color: $blue-color;
 }
 

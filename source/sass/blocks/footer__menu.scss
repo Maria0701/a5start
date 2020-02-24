@@ -37,3 +37,13 @@
     columns: 1;
   }
 }
+
+@media (max-width: 767px) {
+  .footer-menu__items {
+    padding-top: 6px;
+  }
+
+  .footer-menu__item:last-child {
+    padding-bottom: 30px;
+  }
+}

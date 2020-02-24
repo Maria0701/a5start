@@ -21,9 +21,12 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .footer-adress__body {
     padding-top: 6px;
+  }
+
+  .footer-adress__phone:last-child {
     padding-bottom: 30px;
   }
 }
