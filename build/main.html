@@ -23,7 +23,7 @@
       <a class="logo header__logo">
         <picture>
           <source media="(max-width: 768px)" srcset="img/logo-small.svg">
-          <img src="img/logo.svg" width="52" height="52">
+          <img src="img/logo.svg" width="52" height="52" alt="agwsdrghwsrf">
         </picture>
       </a>
       <button class="menu-toggler header__menu-toggler">
@@ -121,9 +121,9 @@
               <source type="image/webp" media="(min-width: 1024px)" srcset="img/goods-1.webp 1x, img/goods-1@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/goods-1-750@1x.webp 1x, img/goods-1-750@2x.webp 2x">
               <source type="image/webp" srcset="img/goods-1-320@1x.webp 1x, img/goods-1-320@2x.webp 2x">
-              <source media="(min-width: 1024px)" srcset="img/goods-1.jpg 1x, , img/goods-1@2x.jpg 2x">
+              <source media="(min-width: 1024px)" srcset="img/goods-1.jpg 1x, img/goods-1@2x.jpg 2x">
               <source media="(min-width: 750px)" srcset="img/goods-1-750.jpg 1x, img/goods-1-750@2x.jpg 2x">
-              <img class="offers__img" src="img/goods-1-320.jpg 1x, img/goods-1-320@2x.jpg 2x" alt="">
+              <img class="offers__img" src="img/goods-1-320.jpg" alt="">
             </picture>
             <a class="offers__link" href="#" title="Производство печатных плат">
               Производство печатных плат
@@ -135,7 +135,7 @@
               <source type="image/webp" media="(min-width: 1024px)" srcset="img/goods-2.webp 1x, img/goods-2@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/goods-2-750@1x.webp 1x, img/goods-2-750@2x.webp 2x">
               <source type="image/webp" srcset="img/goods-2-320@1x.webp 1x, img/goods-2-320@2x.webp 2x">
-              <source media="(min-width: 1024px)" srcset="img/goods-2.jpg 1x, , img/goods-2@2x.jpg 2x">
+              <source media="(min-width: 1024px)" srcset="img/goods-2.jpg 1x, img/goods-2@2x.jpg 2x">
               <source media="(min-width: 750px)" srcset="img/goods-2-750.jpg 1x, img/goods-2-750@2x.jpg 2x">
               <img class="offers__img" src="../img/goods-2-320.jpg" alt="">
             </picture>
@@ -149,7 +149,7 @@
               <source type="image/webp" media="(min-width: 1024px)" srcset="img/goods-3.webp 1x, img/goods-3@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/goods-3-750@1x.webp 1x, img/goods-3-750@2x.webp 2x">
               <source type="image/webp" srcset="img/goods-3-320@1x.webp 1x, img/goods-3-320@2x.webp 2x">
-              <source media="(min-width: 1024px)" srcset="img/goods-3.jpg 1x, , img/goods-3@2x.jpg 2x">
+              <source media="(min-width: 1024px)" srcset="img/goods-3.jpg 1x, img/goods-3@2x.jpg 2x">
               <source media="(min-width: 750px)" srcset="img/goods-3-750.jpg 1x, img/goods-3-750@2x.jpg 2x">
               <img class="offers__img" src="../img/goods-3-320.jpg" alt="">
             </picture>
@@ -182,7 +182,7 @@
               <textarea class="form__textarea" name="message" rows="5" cols="10" minlength="6" maxlength="270" placeholder="Ваш вопрос" required=""></textarea>
             </label>
             <div class="form__label form__label--text">
-              <input type="submit" value="Задать вопрос" class="button form__button" required="" checked="">
+              <input type="submit" value="Задать вопрос" class="button form__button">
             </div>
             <label class="form__label form__label--agreed form__label--text">
               <input class="form__input form__input--agreed" type="checkbox" name="agreed" required="" checked="">
@@ -240,12 +240,12 @@
         </div>
         <div class="footer__adress">
           <h2 class="footer__header footer-adress__header">Наш офис</h2> <button class="footer__button js-closed"><span></span></button>
-          <adress class="footer-adress__body js-hidden">
+          <div class="footer-adress__body js-hidden">
             г. Мытищи, Олимпийский проспект, д.10
             <a class="footer-adress__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
             <a class="footer-adress__phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
             <a class="footer-adress__phone" href="tel:+79269260879">+7 (926) 926-08-79</a>
-          </adress>
+          </div>
         </div>
       <div class="footer__credentials">
         <p class="footer__bottom-text footer__bottom-text--rights">Все права защищены</p>
@@ -263,8 +263,8 @@
       <p class="popup__remark">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="popup__form form" method="post" action="#">
         <label class="form__label popup__label form__label--text">
-          <span class="visually-hidden" minlength="1" maxlength="20">Имя</span>
-          <input class="form__input" type="text" placeholder="Имя" name="name" required="">
+          <span class="visually-hidden">Имя</span>
+          <input class="form__input" type="text" minlength="1" maxlength="20" placeholder="Имя" name="name" required="">
         </label>
         <label class="form__label popup__label form__label--text">
           <span class="visually-hidden">Телефон</span>
@@ -275,7 +275,7 @@
           <textarea class="form__textarea" name="message" rows="4" cols="10" placeholder="Ваш вопрос" required="" minlength="6" maxlength="270"></textarea>
         </label>
         <div class="form__label popup__label form__label--text">
-          <input type="submit" value="Отправить" class="button form__button" required="" checked="">
+          <input type="submit" value="Отправить" class="button form__button">
         </div>
         <label class="form__label popup__label form__label--agreed form__label--text">
           <input class="form__input form__input--agreed" type="checkbox" name="agreed" required="" checked="">
