@@ -14,7 +14,7 @@
   padding-right: 25px;
   padding-left: 22px;
   padding-top: 315px;
-  padding-bottom: 90px;
+  padding-bottom: 110px;
 
   margin-left: auto;
   margin-right: auto;
@@ -122,16 +122,18 @@
 }
 
 .main-screen__remark {
+  position: absolute;
+  bottom: 128px;
+  left: -19px;
   display: block;
   margin-left: 5px;
 
   font-size: 14px;
   line-height: 16px;
-  writing-mode: vertical-lr;
   color: $white-color;
   text-decoration: none;
 
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }
 
 .main-screen__triangle--large {

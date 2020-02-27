@@ -230,15 +230,29 @@
 })();
 
 (function () {
+  var FRAMES_COUNT = 20;
+  var ANIMATION_TIME = 300;
+
   var scrollElements = document.querySelectorAll('.js-scroll');
   scrollElements.forEach(function (it) {
     var idOfTarget = it.getAttribute('href').substr(1);
+
+    var scroller = setInterval(function () {
+      var coordY = document.querySelector('#' + idOfTarget).getBoundingClientRect().top;
+
+      var scrollBy = coordY / FRAMES_COUNT;
+
+      if (scrollBy > window.YOffset - coordY && window.innerHeight + window.YOffset < document.body.offsetHeight) {
+        window.scrollBy(0, scrollBy);
+      } else {
+        window.scrollBy(0, coordY);
+        clearInterval(scroller);
+      }
+    }, ANIMATION_TIME / FRAMES_COUNT);
+
     it.addEventListener('click', function (evt) {
       evt.preventDefault();
-      document.querySelector('#' + idOfTarget).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      scroller();
     });
   });
 })();
