@@ -231,28 +231,28 @@
 
 (function () {
   var FRAMES_COUNT = 20;
-  var ANIMATION_TIME = 300;
+  var ANIMATION_TIME = 900;
 
   var scrollElements = document.querySelectorAll('.js-scroll');
-  scrollElements.forEach(function (it) {
-    var idOfTarget = it.getAttribute('href').substr(1);
 
-    var scroller = setInterval(function () {
-      var coordY = document.querySelector('#' + idOfTarget).getBoundingClientRect().top;
-
-      var scrollBy = coordY / FRAMES_COUNT;
-
-      if (scrollBy > window.YOffset - coordY && window.innerHeight + window.YOffset < document.body.offsetHeight) {
-        window.scrollBy(0, scrollBy);
-      } else {
-        window.scrollBy(0, coordY);
-        clearInterval(scroller);
-      }
-    }, ANIMATION_TIME / FRAMES_COUNT);
-
-    it.addEventListener('click', function (evt) {
+  scrollElements.forEach(function (item) {
+    item.addEventListener('click', function (evt) {
       evt.preventDefault();
-      scroller();
+
+      var coordY = document.querySelector(item.getAttribute('href'))
+          .getBoundingClientRect().top;
+
+      var scrollHandler = function () {
+        var scrollBy = coordY / FRAMES_COUNT;
+        if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+          window.scrollBy(0, scrollBy);
+        } else {
+          window.scrollTo(0, coordY);
+          clearInterval(scrollerInterval);
+        }
+      };
+
+      var scrollerInterval = setInterval(scrollHandler, ANIMATION_TIME / FRAMES_COUNT);
     });
   });
 })();
