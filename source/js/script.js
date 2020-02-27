@@ -2,7 +2,7 @@
 (function () {
   var elementToClip = document.querySelector('.js-clip');
   var textSize = 439;
-  var tabletScreen = 768;
+  var tabletScreen = 1023;
   var elipsis = '...';
   var text = elementToClip.innerHTML;
   if (text.length > textSize && screen.width <= tabletScreen) {
