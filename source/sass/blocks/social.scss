@@ -1,6 +1,7 @@
 .social__items {
   @include not-list;
   display: flex;
+  padding-bottom: 12px;
 }
 
 .social__item + .social__item {
