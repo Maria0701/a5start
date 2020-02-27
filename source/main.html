@@ -26,7 +26,7 @@
           <img src="img/logo.svg" width="52" height="52" alt="agwsdrghwsrf">
         </picture>
       </a>
-      <button class="menu-toggler header__menu-toggler">
+      <button class="menu-toggler header__menu-toggler" name="menu-toggle">
           <svg class="menu-toggler__icon" width="40" height="40"  aria-hidden="true" role="presentation"><use xlink:href="#icon-menu"></use></svg>
       </button>
       <ul class="contacts header__contacts">
@@ -227,7 +227,7 @@
         </div>
         <div class="footer__menu footer-menu">
           <h2 class="footer__header footer-menu__header">Разделы сайта</h2>
-          <button class="footer__button js-closed"><span></span></button>
+          <button class="footer__button js-closed" name="open footer menu"><span></span></button>
           <ul class="footer-menu__items js-hidden">
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукты</a></li>
@@ -239,7 +239,7 @@
           </ul>
         </div>
         <div class="footer__adress footer-adress">
-          <h2 class="footer__header footer-adress__header">Наш офис</h2> <button class="footer__button js-closed"><span></span></button>
+          <h2 class="footer__header footer-adress__header">Наш офис</h2> <button name="open adress" class="footer__button js-closed"><span></span></button>
           <div class="footer-adress__body js-hidden">
             г. Мытищи, Олимпийский проспект, д.10
             <a class="footer-adress__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -286,6 +286,6 @@
   </div>
   <div class="overlay"></div>
   <script src="js/picturefill.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
