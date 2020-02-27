@@ -273,8 +273,11 @@
   }
 
   .main-screen__text-wrapper {
-    margin-top: -88px;
+    display: flex;
+    flex-direction: column;
     flex-basis: 100%;
+    margin-top: -88px;
+
     margin-left: 0;
   }
 
@@ -285,16 +288,16 @@
 
   .main-screen__text {
     padding-left: 51px;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
     font-size: 16px;
     line-height: 156.8%;
   }
 
   .main-screen__readmore {
-    margin-left: 0;
+    margin-left: 3px;
     margin-bottom: 0;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
   }
 
   .main-screen__btn--big {

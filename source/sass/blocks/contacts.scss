@@ -88,6 +88,10 @@
 }
 
 @media (max-width: 767px) {
+  .contacts {
+    margin-top: -4px;
+  }
+
   .contacts__link {
     margin-left: 21px;
   }
