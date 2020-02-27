@@ -76,7 +76,7 @@
   margin-bottom: 0;
 }
 
-.advantages__triangle--large {
+.advantage-decoration__triangle--large {
   top: 30.5%;
   left: 34.5%;
   z-index: -1;
@@ -84,7 +84,7 @@
   transform: rotate(30deg);
 }
 
-.advantages__triangle--first {
+.advantage-decoration__triangle--first {
   bottom: 595px;
   right: 8px;
   z-index: -1;
@@ -132,7 +132,7 @@
     margin-bottom: 10px;
   }
 
-  .advantages__triangle--large {
+  .advantage-decoration__triangle--large {
     top: 16%;
     left: 37.5%;
     width: 700px;
@@ -140,7 +140,7 @@
   }
 
   .advantages__triangle--second,
-  .advantages__triangle--first {
+  .advantage-decoration__triangle--first {
     display: none;
   }
 }
