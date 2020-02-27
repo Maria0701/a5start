@@ -17,3 +17,9 @@
     color: $blue-color;
   }
 }
+
+@media (max-width: 1023px) {
+  .social__items {
+    padding-bottom: 0;
+  }
+}
