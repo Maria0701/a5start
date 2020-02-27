@@ -116,7 +116,6 @@
       } else if (fieldValidate.patternMismatch) {
         input.setCustomValidity('не подходит по паттерну');
       } else {
-
         input.setCustomValidity('');
       }
     } else if (input.type === 'checkbox') {
@@ -191,7 +190,7 @@
     });
 
     if (window.elementInViewport(form)) {
-      if (!storage.name) {
+      if (storage.name === '') {
         nameField.focus();
       }
       if (storage.name !== '') {
@@ -204,6 +203,9 @@
       }
       if (storage.message !== '') {
         messageField.value = storage.message;
+      }
+      if (storage.message === null) {
+        messageField.value = '';
       }
     }
   };
