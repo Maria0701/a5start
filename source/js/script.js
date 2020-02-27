@@ -140,6 +140,28 @@
 })();
 
 (function () {
+  window.elementInViewport = function (el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+
+    while (el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+
+    return (
+      top >= window.pageYOffset &&
+      left >= window.pageXOffset &&
+      (top + height) <= (window.pageYOffset + window.innerHeight) &&
+    (left + width) <= (window.pageXOffset + window.innerWidth)
+    );
+  };
+})();
+
+(function () {
   window.setLocalStorage = function (form) {
     var nameField = form.querySelector('[name=name]');
     var phoneField = form.querySelector('[name=phone]');
@@ -168,19 +190,21 @@
       }
     });
 
-    if (!storage.name) {
-      nameField.focus();
-    }
-    if (storage.name !== '') {
-      nameField.value = storage.name;
-      phoneField.focus();
-    }
-    if (storage.phone !== '') {
-      phoneField.value = storage.phone;
-      messageField.focus();
-    }
-    if (storage.message !== '') {
-      messageField.value = storage.message;
+    if (window.elementInViewport(form)) {
+      if (!storage.name) {
+        nameField.focus();
+      }
+      if (storage.name !== '') {
+        nameField.value = storage.name;
+        phoneField.focus();
+      }
+      if (storage.phone !== '') {
+        phoneField.value = storage.phone;
+        messageField.focus();
+      }
+      if (storage.message !== '') {
+        messageField.value = storage.message;
+      }
     }
   };
 })();
@@ -200,6 +224,7 @@
     document.removeEventListener('keydown', popupEscPressHandler);
     window.maskPhoneNumper(popupForm, true);
     window.formValidate(popupForm, true);
+    document.querySelector('body').classList.remove('no-scroll');
   };
 
   var popupEscPressHandler = function (evt) {
@@ -211,6 +236,7 @@
   var popupHandler = function (evt) {
     evt.preventDefault();
     popupBlock.classList.add('js-popup-show');
+    document.querySelector('body').classList.add('no-scroll');
     popupCloser.addEventListener('click', popupCloseHandler);
     overlayBlock.addEventListener('click', popupCloseHandler);
     document.addEventListener('keydown', popupEscPressHandler);
@@ -231,7 +257,7 @@
 
 (function () {
   var FRAMES_COUNT = 20;
-  var ANIMATION_TIME = 900;
+  var ANIMATION_TIME = 400;
 
   var scrollElements = document.querySelectorAll('.js-scroll');
 
