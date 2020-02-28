@@ -14,7 +14,7 @@
 (function () {
   var footerButtons = document.querySelectorAll('.footer__button');
   var closeAllButtons = function () {
-    footerButtons.forEach(function (button) {
+    Array.from(footerButtons).forEach(function (button) {
       if (!button.classList.contains('js-closed')) {
         button.classList.add('js-closed');
         button.nextElementSibling.classList.add('js-hidden');
@@ -22,7 +22,7 @@
     });
   };
 
-  footerButtons.forEach(function (item) {
+  Array.from(footerButtons).forEach(function (item) {
     item.addEventListener('click', function (evt) {
       evt.preventDefault();
       var infoElement = item.nextElementSibling;
