@@ -1,13 +1,10 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+  background: url("../img/maskgroup.png");
+  background-color: #1b2a31;
+  background-size: cover;
 
-  display: flex;
-
-  background: transparent;
+  color: $white-color;
+  overflow: hidden;
 }
 
 .header__wrapper {

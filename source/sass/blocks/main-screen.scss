@@ -1,29 +1,28 @@
 .main-screen {
-  background: url("../img/maskgroup.png");
-  background-color: #1b2a31;
-  background-size: cover;
-
-  color: $white-color;
-  overflow: hidden;
+  background-image: url("../img/cards.png"), url("../img/icon-trianglepoints.svg"), url("../img/icon-trianglepoints-SM.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-clip: border-box, border-box, border-box;
+  background-position: right 14% bottom 43%, right 19% bottom 44%, right 34% bottom 25%;
+  background-size: 37%, 29%, 17%;
 }
 
 .main-screen__wrapper {
   position: relative;
   display: flex;
   max-width: $max-desktop-width;
-  padding-right: 25px;
+  padding-right: 22px;
   padding-left: 22px;
-  padding-top: 315px;
-  padding-bottom: 110px;
+  padding-top: 197px;
+  padding-bottom: 182px;
 
   margin-left: auto;
   margin-right: auto;
-
 }
+
 
 .main-screen__text-wrapper {
   z-index: 2;
-  flex-basis: 56%;
+  flex-basis: 55%;
   margin-right: auto;
 }
 
@@ -44,7 +43,7 @@
 
 .main-screen__text {
   position: relative;
-  padding-left: 98px;
+  padding-left: 96px;
   margin-top: 0;
   margin-bottom: 44px;
 
@@ -90,37 +89,6 @@
   color: $blue-color;
 }
 
-.main-screen__image {
-  position: absolute;
-  left: 44px;
-  top: 0;
-}
-
-.main-screen__image-container {
-  position: relative;
-  z-index: 1;
-  flex-grow: 1;
-
-  padding-top: 36.05%;
-  margin-left: 0;
-  margin-right: -80px;
-  margin-top: -57px;
-
-  color: $white-color;
-}
-
-.main-screen__image-container-inner {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-
-  background-image: url("../img/cards.png");
-  background-repeat: no-repeat;
-  background-clip: border-box;
-}
-
 .main-screen__remark {
   position: absolute;
   bottom: 128px;
@@ -136,34 +104,27 @@
   transform: rotate(270deg);
 }
 
-.main-screen__triangle--large {
-  right: 30px;
-  top: 232px;
-
-  width: 560px;
-  height: 560px;
-}
-
-.main-screen__triangle--small {
-  right: 315px;
-  top: 453px;
-
-  width: 327px;
-  height: 327px;
-}
-
-@media (max-width: 1600px) {
-  .main-screen__image-container {
-    overflow: hidden;
+@media (max-width: 1450px) {
+  .main-screen {
+    background-position: right -2% bottom 62%,right 6% bottom 62%,right 30% bottom 43%;
+    background-size: 47%,41%,27%;
   }
 }
 
 @media (max-width: 1023px) {
+  .main-screen {
+    background-image: url("../img/cards-750.png"), url("../img/icon-trianglepoints.svg"), url("../img/icon-trianglepoints-SM.svg");
+    background-position: right -65% bottom 87%, right -50% bottom 98%, right 11% bottom 58%;
+    background-size: 60%, 57%, 33%;
+
+    margin-top: -20px;
+  }
+
   .main-screen__wrapper {
     padding-right: 25px;
-    padding-left: 22px;
-    padding-top: 123px;
-    padding-bottom: 68px;
+    padding-left: 25px;
+    padding-top: 44px;
+    padding-bottom: 67px;
   }
 
   .main-screen__text-wrapper {
@@ -187,7 +148,7 @@
   }
 
   .main-screen__text {
-    padding-left: 55px;
+    padding-left: 52px;
     margin-bottom: 55px;
     font-size: 18px;
     line-height: 29px;
@@ -195,30 +156,6 @@
     &::before {
       width: 35px;
     }
-  }
-
-  .main-screen__triangle--large {
-    right: -166px;
-    top: 55px;
-    width: 440px;
-    height: 440px;
-  }
-
-  .main-screen__triangle--small {
-    right: 54px;
-    top: 226px;
-    width: 260px;
-    height: 260px;
-  }
-
-  .main-screen__image-container {
-    left: -39px;
-  }
-
-  .main-screen__image-container-inner {
-    left:  28px;
-    top: 47px;
-    background-image: url("../img/cards-750.png");
   }
 
   .main-screen__remark {
@@ -245,34 +182,22 @@
 }
 
 @media (max-width: 767px) {
+  .main-screen {
+    background-image: url("../img/cards-320.png"), url("../img/icon-trianglepoints.svg"), url("../img/icon-trianglepoints-SM.svg");
+    background-size: 95%, 134%, 77%;
+    background-position: right -34% bottom 91%, right 289% bottom 94%, right -127% bottom 57%;
+
+    margin-top: -20px;
+  }
+
   .main-screen__wrapper {
     flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 315px;
+    padding-bottom: 72px;
   }
 
-  .main-screen__image-container {
-    order: -1;
-
-    padding-top: percentage(320/301);
-  }
-
-  .main-screen__image-container-inner {
-    top: 22px;
-    background-image: url("../img/cards-320.png");
-    background-size: 87%;
-    background-position: 22px 3px;
-  }
-
-  .main-screen__triangle--large {
-    right: -324px;
-    top: 43px;
-  }
-
-  .main-screen__triangle--small {
-    right: -102px;
-    top: 193px;
-  }
 
   .main-screen__text-wrapper {
     display: flex;

@@ -1,13 +1,10 @@
 .contacts {
-  @include not-list;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .contacts__link {
-  margin-left: 45px;
-  margin-right: 45px;
   font-size: 16px;
   line-height: 18px;
   color: $white-color;
@@ -26,7 +23,6 @@
 }
 
 .contacts__link--order {
-  margin-left: 5px;
   margin-right: 4px;
 
   font-size: 14px;
@@ -37,19 +33,20 @@
   color: $blue-color;
 }
 
+.contacts__link--phone {
+  margin-right: 50px;
+}
+
 .contacts__link--phone svg {
   margin-right: 5px;
 }
 
-.contacts__link--mail svg {
-  margin-right: 10px;
+.contacts__link--mail {
+  margin-right: 88px;
 }
 
-@media (max-width: 1200px) {
-  .contacts__link {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+.contacts__link--mail svg {
+  margin-right: 10px;
 }
 
 @media (max-width: 1023px) {
@@ -75,15 +72,21 @@
     height: 26px;
   }
 
-  .contacts__link {
-    margin-left: 32px;
+  .contacts__link--phone {
     margin-right: 0px;
-  }
+}
+
+.contacts__link--mail {
+    margin-right: 30px;
+}
 
   .contacts__link--mail svg,
   .contacts__link--phone svg {
-    margin-left: 0;
     margin-right: 0;
+  }
+
+  .header__menu-toggler {
+    margin-right: 46px;
   }
 }
 
@@ -92,7 +95,11 @@
     margin-top: -4px;
   }
 
-  .contacts__link {
-    margin-left: 21px;
+  .contacts__link--mail {
+    margin-right: 21px;
+  }
+
+  .header__menu-toggler {
+    margin-right: 35px;
   }
 }
