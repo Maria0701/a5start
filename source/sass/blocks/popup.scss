@@ -55,21 +55,19 @@
   margin-bottom: 34px;
 }
 
-.popup__label {
-  &.form__label--agreed {
-    padding-left: 47px;
-    margin-right: 5px;
-    margin-bottom: 0;
-  }
+.popup__label .form__label--agreed {
+  padding-left: 47px;
+  margin-right: 5px;
+  margin-bottom: 0;
 }
 
 .popup__close {
-	position: absolute;
-	top: 17px;
-	right: 27px;
-	display: block;
-	height: 17px;
-	width: 17px;
+  position: absolute;
+  top: 17px;
+  right: 27px;
+  display: block;
+  height: 17px;
+  width: 17px;
   background-color: transparent;
   border: 0;
   outline: 0;

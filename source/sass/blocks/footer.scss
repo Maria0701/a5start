@@ -27,7 +27,7 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
 
   color: $dark-blue-color;
@@ -257,7 +257,7 @@
     display: block;
     width: 16px;
     height: 1px;
-    background-color: #c4c4c4;;
+    background-color: #c4c4c4;
   }
 
   .footer__button.js-closed span::before {
@@ -268,10 +268,11 @@
     display: block;
     width: 1px;
     height: 16px;
-    background-color: #c4c4c4;;
+    background-color: #c4c4c4;
   }
 
-  .footer-menu, .footer__adress {
+  .footer-menu,
+  .footer__adress {
     padding-top: 28px;
     padding-bottom: 0;
   }

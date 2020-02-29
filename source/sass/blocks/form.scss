@@ -12,14 +12,6 @@
   margin-bottom: 40px;
 }
 
-.form__label--textarea {
-  margin-bottom: 45px;
-}
-
-.form__label--agreed {
-  margin-bottom: 0;
-}
-
 .form__input,
 .form__textarea {
   padding-left: 18px;
@@ -29,7 +21,7 @@
   box-sizing: border-box;
   width: 100%;
 
-  font-family: inherit;;
+  font-family: inherit;
   color: $white-color;
   background-color: rgba(255, 255, 255, 0.1);
   border-top: 0;
@@ -39,8 +31,8 @@
   border-radius: 0;
   cursor: pointer;
 
-  &:invalid{
-    box-shadow:none;
+  &:invalid {
+    box-shadow: none;
   }
 }
 
@@ -56,18 +48,13 @@
 .form__textarea:focus,
 .form__textarea:active,
 .form__textarea:focus-within {
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
 .form__label--text,
 .form__button {
   flex-basis: calc(50% - 17px);
-}
-
-.form__textarea {
-  padding-bottom: 60px;
-  resize: none;
 }
 
 .form__input::placeholder,
@@ -77,6 +64,9 @@
 
 .form__label--textarea {
   flex-basis: 100%;
+  padding-bottom: 60px;
+  resize: none;
+  margin-bottom: 45px;
 }
 
 .form__button {
@@ -90,6 +80,7 @@
 
 .form__label--agreed {
   padding-left: 40px;
+  margin-bottom: 0;
 
   font-size: 14px;
   line-height: 16px;

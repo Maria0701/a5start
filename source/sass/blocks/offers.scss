@@ -31,7 +31,7 @@
 
 .offers__item {
   position: relative;
-  flex-basis: calc(100%/3 - 20px);
+  flex-basis: calc(100% / 3 - 20px);
   padding-top: percentage(382/720);
 
   text-decoration: none;
@@ -79,6 +79,7 @@
 .offers__name:hover + .offers__name-mark {
   color: $blue-color;
   background-color: $white-color;
+
   svg {
     color: $blue-color;
   }
@@ -193,7 +194,7 @@
     line-height: 140.62%;
   }
 
-  .offers__items .offers__item{
+  .offers__items .offers__item {
     margin-bottom: 30px;
   }
 
