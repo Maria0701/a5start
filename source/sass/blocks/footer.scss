@@ -45,7 +45,7 @@
   padding-right: 27px;
   padding-left: 25px;
   padding-top: 16px;
-  padding-bottom: 57px;
+  padding-bottom: 10px;
   max-width: $max-desktop-width;
   margin-left: auto;
   margin-right: auto;
@@ -67,6 +67,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 152px;
 }
 
 .footer__bottom-text {
@@ -93,8 +94,10 @@
   }
 }
 
-.footer__bottom-link:last-child {
-  margin-left: auto;
+@media (max-width: 1400px) {
+  .footer__social {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 1024px) {

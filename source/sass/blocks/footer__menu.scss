@@ -5,6 +5,7 @@
 }
 
 .footer-menu__link {
+  margin-right: 60px;
   font-size: 15px;
   line-height: 25px;
   text-decoration: none;
@@ -17,17 +18,9 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .footer-menu {
-    padding-left: 148px;
-  }
-
-  .footer-menu__items {
-    padding-bottom: 0;
-  }
-
-  .footer-menu__item {
-    margin-right: 57px;
+@media (max-width: 1400px) {
+  .footer-menu__link {
+    margin-right: 0;
   }
 }
 
@@ -35,8 +28,4 @@
   .footer-menu__items {
     columns: 1;
   }
-}
-
-@media (max-width: 767px) {
-
 }

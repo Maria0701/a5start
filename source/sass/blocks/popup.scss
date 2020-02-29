@@ -50,7 +50,8 @@
 .popup__label.form__label--textarea {
   margin-bottom: 28px;
 }
-.popup__label.form__label--submit {
+
+.popup__label.form__button {
   margin-bottom: 34px;
 }
 
@@ -59,10 +60,6 @@
     padding-left: 47px;
     margin-right: 5px;
     margin-bottom: 0;
-  }
-
-  .form__label-name--agreed::before {
-    left: -45px;
   }
 }
 

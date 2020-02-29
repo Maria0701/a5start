@@ -16,8 +16,7 @@
   margin-bottom: 45px;
 }
 
-.form__label--agreed,
-.form__label--submit {
+.form__label--agreed {
   margin-bottom: 0;
 }
 
@@ -61,7 +60,8 @@
   outline: none;
 }
 
-.form__label--text {
+.form__label--text,
+.form__button {
   flex-basis: calc(50% - 17px);
 }
 
@@ -80,7 +80,6 @@
 }
 
 .form__button {
-  width: 100%;
   background-color: transparent;
 
   &:hover,
@@ -91,12 +90,15 @@
 
 .form__label--agreed {
   padding-left: 40px;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
-.form__label-name--agreed::before {
+.form__input-checkbox {
   content: "";
   position: absolute;
-  left: -33px;
+  left: 6px;
   top: 2px;
   display: block;
   width: 16px;
@@ -105,18 +107,10 @@
   background-color: inherit;
 }
 
-.form__input--agreed:checked + .form__label-name--agreed::before {
+.form__input--agreed:checked + .form__input-checkbox {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.form__label-name--agreed {
-  position: relative;
-  top: 0;
-
-  font-size: 14px;
-  line-height: 16px;
 }
 
 @media (max-width: 1023px) {
@@ -143,7 +137,8 @@
     margin-bottom: 30px;
   }
 
-  .form__label--text {
+  .form__label--text,
+  .form__button {
     flex-basis: calc(100% - 8px);
   }
 

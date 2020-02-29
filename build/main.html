@@ -23,7 +23,7 @@
       <div class="header__wrapper">
         <a class="logo header__logo">
           <picture>
-            <source media="(max-width: 768px)" srcset="img/logo-small.svg">
+            <source media="(max-width: 767px)" srcset="img/logo-small.svg">
             <img src="img/logo.svg" width="52" height="52" alt="agwsdrghwsrf">
           </picture>
         </a>
@@ -145,11 +145,10 @@
             <label class="form__label form__label--textarea" aria-label="Ваш вопрос">
               <textarea class="form__textarea" name="message" rows="5" cols="10" minlength="6" maxlength="270" placeholder="Ваш вопрос" required="">Ваш вопрос</textarea>
             </label>
-            <div class="form__label form__label--text form__label--submit">
-              <input type="submit" value="Задать вопрос" class="button form__button">
-            </div>
+            <input type="submit" value="Задать вопрос" class="button form__button">
             <label class="form__label form__label--agreed form__label--text">
               <input class="form__input form__input--agreed" type="checkbox" name="agreed" required="" checked="">
+              <span class="form__input-checkbox"></span>
               Я согласен на обработку персональных данных
             </label>
           </form>
@@ -206,9 +205,9 @@
     </div>
     <div class="footer__bottom">
       <div class="footer__credentials">
-        <p class="footer__bottom-text footer__bottom-text--rights">Все права защищены</p>
-        <p class="footer__bottom-text footer__bottom-text--confidential"><a class="footer__bottom-link" href="#">Условия конфиденциальности</a></p>
-        <p class="footer__bottom-text"><a class="footer__bottom-link" href="#">Developed by wow studio</a></p>
+        <a class="footer__bottom-link" href="#">Все права защищены</a>
+        <a class="footer__bottom-link" href="#">Условия конфиденциальности</a>
+        <a class="footer__bottom-link" href="#">Developed by wow studio</a>
       </div>
     </div>
   
@@ -230,11 +229,10 @@
         <label class="form__label popup__label form__label--textarea" aria-label="Ваш вопрос">
           <textarea class="form__textarea" name="message" rows="5" cols="10" placeholder="Ваш вопрос" required="" minlength="6" maxlength="270"></textarea>
         </label>
-        <div class="form__label popup__label form__label--submit form__label--text">
-          <input type="submit" value="Отправить" class="button form__button">
-        </div>
+        <input type="submit" value="Отправить" class="button form__button">
         <label class="form__label popup__label form__label--agreed form__label--text">
           <input class="form__input form__input--agreed" type="checkbox" name="agreed" required="" checked="">
+          <span class="form__input-checkbox"></span>
           Я согласен на обработку персональных данных
         </label>
       </form>
