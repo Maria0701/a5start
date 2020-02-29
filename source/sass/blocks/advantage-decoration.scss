@@ -1,0 +1,21 @@
+.advantage-decoration {
+  background-image: url("../img/triangle-left-gray.svg"), url("../img/trianglepoints-left.svg"), url("../img/trianglepoints-right.svg"), url("../img/triangle-right-gray.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 222px, 538px, 720px, 228px;
+  background-position: left 12% top 4.5%, left 0 top 105%, right 50% top 53%, right 1.5% top 46%;
+}
+
+@media (max-width: 1023px) {
+  .advantage-decoration {
+    background-image: url("../img/trianglepoints-right.svg");
+    background-repeat: no-repeat;
+    background-size: 720px;
+    background-position: right -396% top 59%;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantage-decoration {
+    background-position: right 80% top 73%;
+  }
+}

@@ -1,5 +1,9 @@
 .feedback {
   background-color: $blue-color;
+  background-image: url("../img/paper_airplane.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg"), url("../img/triangle-right.svg"), url("../img/triangle-left.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 25% 42%, 18% 51%, 12% 76%, 99% 10%, 100% 108%;
+  background-size: auto, 560px, 329px, 265px, 345px;
 }
 
 .feedback__wrapper {
@@ -18,21 +22,9 @@
   color: $white-color;
 }
 
-@media (min-width: 1024px) {
-  .feedback {
-    background-image: url("../img/paper_airplane.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg"), url("../img/triangle-right.svg"), url("../img/triangle-left.svg");
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 25% 42%, 18% 51%, 12% 76%, 99% 10%, 100% 108%;
-    background-size: auto, 560px, 329px, 265px, 345px;
-  }
-
-  .feedback__form-wrapper {
-    width: calc(50% - 15px);
-  }
-}
-
 .feedback__form-wrapper {
   margin-left: auto;
+  width: calc(50% - 15px);
 }
 
 .feedback__header {
@@ -54,11 +46,19 @@
 }
 
 @media (max-width: 1023px) {
+  .feedback {
+    background-image: none
+  }
+
   .feedback__wrapper {
     padding-left: 90px;
     padding-right: 88px;
     padding-top: 80px;
     padding-bottom: 103px;
+  }
+
+  .feedback__form-wrapper {
+    width: 100%;
   }
 
   .feedback__header {

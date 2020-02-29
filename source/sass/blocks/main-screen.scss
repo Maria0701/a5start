@@ -1,5 +1,5 @@
 .main-screen {
-  background-image: url("../img/cards.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-SM.svg");
+  background-image: url("../img/cards.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-clip: border-box, border-box, border-box;
   background-position: right 14% bottom 43%, right 19% bottom 44%, right 34% bottom 25%;
@@ -181,7 +181,7 @@
 
 @media (max-width: 767px) {
   .main-screen {
-    background-image: url("../img/cards-320.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-SM.svg");
+    background-image: url("../img/cards-320.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
     background-size: 95%, 134%, 77%;
     background-position: right -34% bottom 91%, right 289% bottom 94%, right -127% bottom 57%;
 

@@ -159,11 +159,8 @@
   .footer__social {
     flex-direction: column;
     padding-bottom: 50px;
+    margin-right: 0;
     margin-bottom: 0;
-  }
-
-  .footer__button {
-    display: block;
   }
 
   .footer__top-wrapper {
@@ -229,6 +226,7 @@
     top: 29px;
     right: 1px;
     width: 16px;
+    display: block;
     height: 16px;
     margin: 0;
     padding: 0;
