@@ -20,7 +20,7 @@
 
 @media (min-width: 1024px) {
   .feedback {
-    background-image: url("../img/paper_airplane.png"), url("../img/icon-trianglepoints.svg"), url("../img/icon-trianglepoints-sm.svg"), url("../img/icon-triangle-right.svg"), url("../img/icon-triangle-left.svg");
+    background-image: url("../img/paper_airplane.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg"), url("../img/triangle-right.svg"), url("../img/triangle-left.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 25% 42%, 18% 51%, 12% 76%, 99% 10%, 100% 108%;
     background-size: auto, 560px, 329px, 265px, 345px;
@@ -53,23 +53,6 @@
   color: $white-color;
 }
 
-.feedback__triangle--first {
-  top: 71px;
-  right: -288px;
-  width: 200px;
-  height: 200px;
-  opacity: 0.1;
-  transform: rotate(-60deg);
-}
-
-.feedback__triangle--second {
-  top: 286px;
-  right: -441px;
-  width: 328px;
-  height: 328px;
-  opacity: 0.1;
-}
-
 @media (max-width: 1023px) {
   .feedback__wrapper {
     padding-left: 90px;
@@ -90,7 +73,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .feedback__wrapper {
     padding-left: 10px;
     padding-right: 10px;

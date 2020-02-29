@@ -64,9 +64,31 @@
 
 .form__label--textarea {
   flex-basis: 100%;
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 17px;
   padding-bottom: 60px;
+
+  font-family: inherit;
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  cursor: pointer;
   resize: none;
-  margin-bottom: 45px;
+
+  &:invalid {
+    box-shadow: none;
+  }
 }
 
 .form__button {

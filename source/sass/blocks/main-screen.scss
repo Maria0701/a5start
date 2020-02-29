@@ -1,5 +1,5 @@
 .main-screen {
-  background-image: url("../img/cards.png"), url("../img/icon-trianglepoints.svg"), url("../img/icon-trianglepoints-SM.svg");
+  background-image: url("../img/cards.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-SM.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-clip: border-box, border-box, border-box;
   background-position: right 14% bottom 43%, right 19% bottom 44%, right 34% bottom 25%;
@@ -104,6 +104,10 @@
   transform: rotate(270deg);
 }
 
+.main-screen__btn--small {
+  display: none;
+}
+
 @media (max-width: 1450px) {
   .main-screen {
     background-position: right -2% bottom 62%, right 6% bottom 62%, right 30% bottom 43%;
@@ -113,7 +117,7 @@
 
 @media (max-width: 1023px) {
   .main-screen {
-    background-image: url("../img/cards-750.png"), url("../img/icon-trianglepoints.svg"), url("../img/icon-trianglepoints-SM.svg");
+    background-image: url("../img/cards-750.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
     background-position: right -65% bottom 87%, right -50% bottom 98%, right 11% bottom 58%;
     background-size: 60%, 57%, 33%;
 
@@ -175,15 +179,9 @@
   }
 }
 
-@media (min-width: 768px) {
-  .main-screen__btn--small {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   .main-screen {
-    background-image: url("../img/cards-320.png"), url("../img/icon-trianglepoints.svg"), url("../img/icon-trianglepoints-SM.svg");
+    background-image: url("../img/cards-320.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-SM.svg");
     background-size: 95%, 134%, 77%;
     background-position: right -34% bottom 91%, right 289% bottom 94%, right -127% bottom 57%;
 
@@ -229,5 +227,9 @@
 
   .main-screen__btn--big {
     display: none;
+  }
+
+  .main-screen__btn--small {
+    display: block;
   }
 }
