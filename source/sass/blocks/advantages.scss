@@ -1,4 +1,3 @@
-
 .advantages__wrapper {
   position: relative;
   padding-left: 40px;
@@ -72,32 +71,7 @@
 }
 
 .advantages__text {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.advantage-decoration__triangle--large {
-  top: 30.5%;
-  left: 34.5%;
-  z-index: -1;
-  opacity: 0.3;
-  transform: rotate(30deg);
-}
-
-.advantage-decoration__triangle--first {
-  bottom: 595px;
-  right: 8px;
-  z-index: -1;
-  opacity: 0.09;
-  transform: rotate(0deg);
-}
-
-.advantages__triangle--second {
-  left: -78px;
-  top: 6px;
-  z-index: -1;
-  opacity: 0.09;
-  transform: rotate(-60deg);
+  margin: 0;
 }
 
 @media (max-width: 1023px) {

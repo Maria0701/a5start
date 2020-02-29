@@ -50,7 +50,6 @@
 }
 
 @media (max-width: 1023px) {
-  .contacts__text,
   .contacts__link--order {
     position: absolute;
 
@@ -72,13 +71,19 @@
     height: 26px;
   }
 
+  .contacts__link {
+    width: 26px;
+    height: 30px;
+    overflow: hidden;
+  }
+
   .contacts__link--phone {
     margin-right: 0px;
-}
+  }
 
-.contacts__link--mail {
+  .contacts__link--mail {
     margin-right: 30px;
-}
+  }
 
   .contacts__link--mail svg,
   .contacts__link--phone svg {

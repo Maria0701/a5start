@@ -18,29 +18,31 @@
   <div style="display:none">
       <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <header class="header">
-    <div class="header__wrapper">
-      <a class="logo header__logo">
-        <picture>
-          <source media="(max-width: 768px)" srcset="img/logo-small.svg" />
-          <img src="img/logo.svg" width="52" height="52" alt="agwsdrghwsrf">
-        </picture>
-      </a>
-      <button class="menu-toggler header__menu-toggler" name="menu-toggle">
-          <svg class="menu-toggler__icon" width="40" height="40"  aria-hidden="true" role="presentation"><use xlink:href="#icon-menu"></use></svg>
-      </button>
-      <div class="contacts header__contacts">
-        <a class="contacts__link contacts__link--mail" href="mailto:info@sd.ru" title="Напишите в компанию по адресу">
-          <svg class="contacts__icon" width="19" height="14"  aria-hidden="true" role="presentation"><use xlink:href="#icon-envelope"></use></svg>
-            <span class="contacts__text">info@sd.ru</span>
+  <div class="header">
+    <header class="header__inside">
+      <div class="header__wrapper">
+        <a class="logo header__logo">
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/logo-small.svg" />
+            <img src="img/logo.svg" width="52" height="52" alt="agwsdrghwsrf">
+          </picture>
         </a>
-        <a class="contacts__link contacts__link--phone" href="tel:+74950005252" title="Напишите в компанию по адресу">
-          <svg class="contacts__icon" width="18" height="18"  aria-hidden="true" role="presentation"><use xlink:href="#icon-phone"></use></svg>
-          <span class="contacts__text">+7 (495) 000 52 52</span>
-        </a>
-        <a class="contacts__link contacts__link--order button js-popup-open" href="#" title="Заказать звонок">Заказать звонок</a>
+        <button class="menu-toggler header__menu-toggler" name="menu-toggle">
+            <svg class="menu-toggler__icon" width="40" height="40"  aria-hidden="true" role="presentation"><use xlink:href="#icon-menu"></use></svg>
+        </button>
+        <div class="contacts header__contacts">
+          <a class="contacts__link contacts__link--mail" href="mailto:info@sd.ru" title="Напишите в компанию по адресу">
+            <svg class="contacts__icon" width="19" height="14"  aria-hidden="true" role="presentation"><use xlink:href="#icon-envelope"></use></svg>
+            info@sd.ru
+          </a>
+          <a class="contacts__link contacts__link--phone" href="tel:+74950005252" title="Напишите в компанию по адресу">
+            <svg class="contacts__icon" width="18" height="18"  aria-hidden="true" role="presentation"><use xlink:href="#icon-phone"></use></svg>
+            +7 (495) 000 52 52
+          </a>
+          <a class="contacts__link contacts__link--order button js-popup-open" href="#" title="Заказать звонок">Заказать звонок</a>
+        </div>
       </div>
-    </div>
+    </header>
     <section class="header__main-screen main-screen">
       <div class="main-screen__wrapper">
         <div class="main-screen__text-wrapper">
@@ -52,7 +54,7 @@
         </div>
       </div>
     </section>
-  </header>
+  </div>
   <main>
     <div class="advantage-decoration">
       <svg class="icon-triangle advantage-decoration__triangle advantage-decoration__triangle--large" width="585" height="490"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints"></use></svg>
@@ -88,7 +90,7 @@
     <section class="about">
       <div class="about__wrapper">
         <h2 class="about__header ">О компании</h2>
-        <div class="js-clip">
+        <div class="about__text js-clip">
           <p>
             Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
           </p>
@@ -105,22 +107,22 @@
       <div class="offers__wrapper">
         <h2 class="offers__header">Service Device предлагает следующие товары и услуги</h2>
         <div class="offers__items">
-          <a class="offers__item offers__item--production">
-            <p class="offers__name" href="#" title="Производство печатных плат">
+          <a class="offers__item offers__item--production" title="Производство печатных плат">
+            <span class="offers__name" >
               Производство печатных плат
-            </p>
+            </span>
             <span class="offers__name-mark"><svg class="offers__icon" width="8" height="14" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow"></use></svg></span>
           </a>
-          <a class="offers__item offers__item--mounting">
-            <p class="offers__name" href="#" title="Монтаж печатных плат">
+          <a class="offers__item offers__item--mounting" href="#" title="Монтаж печатных плат">
+            <span class="offers__name">
               Монтаж печатных плат
-            </p>
+            </span>
             <span class="offers__name-mark"><svg class="offers__icon"  width="8" height="14" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow"></use></svg></span>
           </a>
-          <a class="offers__item offers__item--lighting">
-            <p class="offers__name" href="#" title="Комплектующие для светотехники">
+          <a class="offers__item offers__item--lighting" href="#" title="Комплектующие для светотехники">
+            <span class="offers__name">
               Комплектующие для светотехники
-            </p>
+            </span>
             <span class="offers__name-mark">
               <svg class="offers__icon" width="8" height="14" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow"></use></svg>
             </span>
@@ -134,16 +136,13 @@
           <h2 class="feedback__header">Остались вопросы? Задайте их нам!</h2>
           <p class="feedback__remark">Мы проконсультируем Вас бесплатно </p>
           <form class="feedback__form form" method="post" action="#">
-            <label class="form__label form__label--text">
-              <span class="visually-hidden">Имя</span>
+            <label class="form__label form__label--text" aria-label="Имя">
               <input class="form__input" type="text" minlength="3" maxlength="20" placeholder="Имя" name="name" required />
             </label>
-            <label class="form__label form__label--text">
-              <span class="visually-hidden">Телефон</span>
+            <label class="form__label form__label--text" aria-label="Телефон">
               <input class="form__input js-phone" placeholder="Телефон" type="text" minlength="18" maxlength="18" name="phone" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required />
             </label>
-            <label class="form__label form__label--textarea">
-              <span class="visually-hidden">Ваш вопрос</span>
+            <label class="form__label form__label--textarea" aria-label="Ваш вопрос">
               <textarea class="form__textarea" name="message" rows="5" cols="10" minlength="6" maxlength="270" placeholder="Ваш вопрос" required>Ваш вопрос</textarea>
             </label>
             <div class="form__label form__label--text form__label--submit">
@@ -151,7 +150,7 @@
             </div>
             <label class="form__label form__label--agreed form__label--text">
               <input class="form__input form__input--agreed" type="checkbox" name="agreed" required checked/>
-              <span class="form__label-name form__label-name--agreed">Я согласен на обработку персональных данных</span>
+              Я согласен на обработку персональных данных
             </label>
           </form>
         </div>
@@ -222,16 +221,13 @@
       <h2 class="popup__header">Закажите звонок</h2>
       <p class="popup__remark">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form  class="popup__form form" method="post" action="#">
-        <label class="form__label popup__label form__label--text">
-          <span class="visually-hidden"  >Имя</span>
+        <label class="form__label popup__label form__label--text" aria-label="Имя">
           <input class="form__input" type="text" minlength="1" maxlength="20" placeholder="Имя" name="name" required />
         </label>
-        <label class="form__label popup__label form__label--text">
-          <span class="visually-hidden">Телефон</span>
+        <label class="form__label popup__label form__label--text" aria-label="Телефон">
           <input class="form__input js-phone"  minlength="18" maxlength="18" placeholder="Телефон" type="text" name="phone" required pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" />
         </label>
-        <label class="form__label popup__label form__label--textarea">
-          <span class="visually-hidden">Ваш вопрос</span>
+        <label class="form__label popup__label form__label--textarea" aria-label="Ваш вопрос">
           <textarea class="form__textarea" name="message" rows="5" cols="10" placeholder="Ваш вопрос" required minlength="6" maxlength="270"></textarea>
         </label>
         <div class="form__label popup__label form__label--submit form__label--text">
@@ -239,7 +235,7 @@
         </div>
         <label class="form__label popup__label form__label--agreed form__label--text">
           <input class="form__input form__input--agreed" type="checkbox" name="agreed" required checked/>
-          <span class="form__label-name form__label-name--agreed">Я согласен на обработку персональных данных</span>
+          Я согласен на обработку персональных данных
         </label>
       </form>
     </div>
