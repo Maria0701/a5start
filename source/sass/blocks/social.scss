@@ -1,21 +1,20 @@
 .social__items {
-  @include not-list;
   display: flex;
-  padding-bottom: 12px;
-}
-
-.social__item + .social__item {
-  margin-left: 15px;
 }
 
 .social__link {
   color: $footer-text-color;
   transition: $transition-color;
+  margin-right: 15px;
 
   &:hover,
   &:focus {
     color: $blue-color;
   }
+}
+
+.social__link:last-child {
+  margin-right: 0;
 }
 
 @media (max-width: 1023px) {

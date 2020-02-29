@@ -146,7 +146,7 @@
               <span class="visually-hidden">Ваш вопрос</span>
               <textarea class="form__textarea" name="message" rows="5" cols="10" minlength="6" maxlength="270" placeholder="Ваш вопрос" required>Ваш вопрос</textarea>
             </label>
-            <div class="form__label form__label--text">
+            <div class="form__label form__label--text form__label--submit">
               <input type="submit" value="Задать вопрос" class="button form__button" />
             </div>
             <label class="form__label form__label--agreed form__label--text">
@@ -155,40 +155,31 @@
             </label>
           </form>
         </div>
-        <svg class="icon-triangle feedback__triangle feedback__triangle--large" width="585" height="490"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints"></use></svg>
-        <svg class="icon-triangle feedback__triangle feedback__triangle--small" width="326" height="286"  aria-hidden="true" role="presentation"><use xlink:href="#icon-trianglepoints-sm"></use></svg>
-        <svg class="icon-triangle feedback__triangle feedback__triangle--first" width="200" height="200"  aria-hidden="true" role="presentation"><use xlink:href="#icon-triangle"></use></svg>
-        <svg class="icon-triangle feedback__triangle feedback__triangle--second" width="330" height="330"  aria-hidden="true" role="presentation"><use xlink:href="#icon-triangle"></use></svg>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__top">
+    <div class="footer__top-wrapper">
       <div class="footer__social social">
         <a class="logo footer__logo">
           <svg class="logo__icon" width="213" height="52"  aria-hidden="true" role="img"><use xlink:href="#icon-logo"></use></svg>
           </a>
           <p class="footer__bottom-text footer__bottom-text--company">1999-2018 SD Service Devices</p>
-          <ul class="social__items">
-            <li class="social__item">
-              <a href="#" title="Присоединяйтесь к нам в FB" class="social__link social__link--fb">
-                <svg class="social__icon" width="27" height="26"  aria-hidden="true" role="presentation"><use xlink:href="#icon-fb"></use></svg>
+          <div class="social__items">
+            <a href="#" title="Присоединяйтесь к нам в FB" class="social__link social__link--fb">
+              <svg class="social__icon" width="27" height="26"  aria-hidden="true" role="presentation"><use xlink:href="#icon-fb"></use></svg>
                 <span class="visually-hidden">Присоединяйтесь к нам в FB</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" title="Присоединяйтесь к нам в ok" class="social__link social__link--ok">
-                <svg class="social__icon" width="27" height="26"  aria-hidden="true" role="presentation"><use xlink:href="#icon-ok"></use></svg>
-                <span class="visually-hidden">Присоединяйтесь к нам в OK</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" title="Присоединяйтесь к нам в VK" class="social__link social__link--vk">
-                <svg class="social__icon" width="27" height="26"  aria-hidden="true" role="presentation"><use xlink:href="#icon-vk"></use></svg>
-                <span class="visually-hidden">Присоединяйтесь к нам в VK</span>
-              </a>
-            </li>
-          </ul>
+            </a>
+            <a href="#" title="Присоединяйтесь к нам в ok" class="social__link social__link--ok">
+              <svg class="social__icon" width="27" height="26"  aria-hidden="true" role="presentation"><use xlink:href="#icon-ok"></use></svg>
+              <span class="visually-hidden">Присоединяйтесь к нам в OK</span>
+            </a>
+            <a href="#" title="Присоединяйтесь к нам в VK" class="social__link social__link--vk">
+              <svg class="social__icon" width="27" height="26"  aria-hidden="true" role="presentation"><use xlink:href="#icon-vk"></use></svg>
+              <span class="visually-hidden">Присоединяйтесь к нам в VK</span>
+            </a>
+          </div>
         </div>
         <div class="footer__menu footer-menu">
           <h2 class="footer__header footer-menu__header">Разделы сайта</h2>
@@ -212,12 +203,16 @@
             <a class="footer-adress__phone" href="tel:+79269260879">+7 (926) 926-08-79</a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
       <div class="footer__credentials">
         <p class="footer__bottom-text footer__bottom-text--rights">Все права защищены</p>
         <p class="footer__bottom-text footer__bottom-text--confidential"><a class="footer__bottom-link" href="#" >Условия конфиденциальности</a></p>
         <p class="footer__bottom-text"><a class="footer__bottom-link" href="#" >Developed by wow studio</a></p>
       </div>
     </div>
+  </div>
   </footer>
   <div class="popup">
     <div class="popup__wrapper">
