@@ -1,6 +1,6 @@
 .footer-menu__items {
   @include not-list;
-  column-count: 2;
+  columns: 2 auto;
   transition: height 2s ease-in-out;
 }
 
@@ -20,7 +20,13 @@
 
 @media (max-width: 1400px) {
   .footer-menu__link {
-    margin-right: 0;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-menu__items {
+    columns: 170px auto;
   }
 }
 

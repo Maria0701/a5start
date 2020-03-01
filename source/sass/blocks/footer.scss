@@ -104,9 +104,16 @@
 
 @media (max-width: 1400px) {
   .footer__social {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 }
+
+@media (max-width: 1200px) {
+  .footer__menu {
+    flex-grow: 1;
+  }
+}
+
 
 @media (max-width: 1100px) {
   .footer__credentials {
@@ -146,6 +153,7 @@
     align-items: center;
 
     padding-bottom: 20px;
+    margin-right: 0;
     margin-bottom: 38px;
   }
 
