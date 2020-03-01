@@ -284,3 +284,13 @@
     });
   });
 })();
+
+(function () {
+  var tabletScreen = 1023;
+  var footerCredentials = document.querySelector('.footer__credentials');
+  var elementToMove = footerCredentials.querySelector('.footer__bottom-text--company');
+  var targetPlace = document.querySelector('.footer__logo');
+  if (window.innerWidth <= tabletScreen) {
+    targetPlace.after(elementToMove);
+  }
+})();
