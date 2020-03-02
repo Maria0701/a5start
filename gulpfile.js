@@ -90,7 +90,7 @@ gulp.task("minify", async function () {
 });
 
 gulp.task("copy2", function () {
-  return gulp.src("node_modules/picturefill/dist/picturefill.min.js")
+  return gulp.src("node_modules/picturefill/dist/picturefill.js")
   .pipe(gulp.dest("build/js"));
 });
 
@@ -110,5 +110,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "copy2", "css", "minify", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "copy2", "css",  "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
