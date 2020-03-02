@@ -55,12 +55,20 @@
   color: #1f3c40;
 }
 
+.footer-menu {
+  width: 38%;
+}
+
+.footer-adress {
+  width: 20%;
+}
 
 .footer__social {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 50px;
+  width: 20%;
 }
 
 .footer__bottom-text {
@@ -104,12 +112,6 @@
   display: none;
 }
 
-// @media (max-width: 1200px) {
-//   .footer__menu {
-//     flex-grow: 1;
-//   }
-// }
-
 @media (max-width: 1023px) {
   .footer::after {
     bottom: 114px;
@@ -146,19 +148,25 @@
 
   .footer__bottom-text--company {
     padding-top: 12px;
+    margin-right: 0;
   }
 
   .footer__adress {
     flex-basis: 48%;
   }
 
-  .footer__bottom-text--rights {
+  .footer__bottom-link--rights {
     display: none;
   }
 
   .footer__credentials {
     position: relative;
     padding-top: 22px;
+  }
+
+
+  .footer__bottom-link--confidential {
+    margin-right: 0;
   }
 }
 
@@ -274,5 +282,9 @@
   .footer__adress {
     padding-top: 28px;
     padding-bottom: 0;
+  }
+
+  .footer__bottom-link--confidential {
+    display: none;
   }
 }

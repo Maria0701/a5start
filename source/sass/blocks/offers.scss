@@ -32,36 +32,9 @@
 .offers__item {
   position: relative;
   flex-basis: calc(100% / 3 - 20px);
-  padding-top: percentage(382/720);
+  padding: 52px 135px 508px 43px;
 
   text-decoration: none;
-
-  background-color: #26343d;
-  background-size: cover;
-}
-
-.offers__item--production {
-  background-image: url("../img/goods-1.jpg");
-}
-
-.offers__item--mounting {
-  background-image: url("../img/goods-2.jpg");
-}
-
-.offers__item--lighting {
-  background-image: url("../img/goods-3.jpg");
-}
-
-.offers__name {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding-left: 43px;
-  padding-right: 135px;
-  padding-top: 51px;
-  padding-bottom: 51px;
 
   font-family: $roboto;
   font-weight: normal;
@@ -69,7 +42,21 @@
   line-height: 30px;
 
   color: $white-color;
-  background-color: rgba(72, 72, 72, 0.8);
+
+  background-color: #26343d;
+  background-size: cover;
+}
+
+.offers__item--production {
+  background: url("../img/goods-1.png");
+}
+
+.offers__item--mounting {
+  background-image: url("../img/goods-2.png");
+}
+
+.offers__item--lighting {
+  background-image: url("../img/goods-3.png");
 }
 
 .offers__name:hover {
@@ -131,47 +118,19 @@
   .offers__item {
     flex-basis: 100%;
     flex-grow: 1;
-    padding-top: percentage(255/720);
+    padding: 39px 489px 157px 43px;
   }
 
   .offers__item--production {
-    background-image: url("../img/goods-1-750.jpg");
+    background-image: url("../img/goods-1-750.png");
   }
 
   .offers__item--mounting {
-    background-image: url("../img/goods-2-750.jpg");
+    background-image: url("../img/goods-2-750.png");
   }
 
   .offers__item--lighting {
-    background-image: url("../img/goods-3-750.jpg");
-  }
-
-  @media (min-resolution: 192dpi) {
-    .offers__item--production {
-      background-image: url("../img/goods-1@2x.jpg");
-    }
-
-    .offers__item--mounting {
-      background-image: url("../img/goods-2@2x.jpg");
-    }
-
-    .offers__item--lighting {
-      background-image: url("../img/goods-3@2x.jpg");
-    }
-  }
-
-  @media (min-resolution: 192dpi) {
-    .offers__item--production {
-      background-image: url("../img/goods-1-750@2x.jpg");
-    }
-
-    .offers__item--mounting {
-      background-image: url("../img/goods-2-750@2x.jpg");
-    }
-
-    .offers__item--lighting {
-      background-image: url("../img/goods-3-750@2x.jpg");
-    }
+    background-image: url("../img/goods-3-750.png");
   }
 
   .offers__name {
@@ -199,38 +158,18 @@
   }
 
   .offers__item {
-    padding-top: percentage(256/290);
+    padding: 18px 103px 177px 35px;
   }
 
   .offers__item--production {
-    background-image: url("../img/goods-1-320.jpg");
+    background-image: url("../img/goods-1-320.png");
   }
 
   .offers__item--mounting {
-    background-image: url("../img/goods-2-320.jpg");
+    background-image: url("../img/goods-2-320.png");
   }
 
   .offers__item--lighting {
-    background-image: url("../img/goods-3-320.jpg");
-  }
-
-  @media (min-resolution: 192dpi) {
-    .offers__item--production {
-      background-image: url("../img/goods-1-320@2x.jpg");
-    }
-
-    .offers__item--mounting {
-      background-image: url("../img/goods-2-320@2x.jpg");
-    }
-
-    .offers__item--lighting {
-      background-image: url("../img/goods-3-320@2x.jpg");
-    }
-  }
-
-  .offers__name {
-    padding-left: 35px;
-    padding-right: 30%;
-    padding-top: 20px;
+    background-image: url("../img/goods-3-320.png");
   }
 }
