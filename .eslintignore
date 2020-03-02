@@ -1,3 +1,7 @@
 gulpfile.js
 build/*
 npm-debug.*
+/build/js/*.js
+/build/css/*.css
+/source/js/picturefill.min.js
+/source/js/picturefill.js
