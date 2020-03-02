@@ -1,4 +1,3 @@
 gulpfile.js
 build/*
 npm-debug.*
-/source/js/picturefill.min.js
