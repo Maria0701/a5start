@@ -6,6 +6,12 @@
   background-size: 37%, 29%, 17%;
 }
 
+@media (min-resolution: 192dpi) {
+  .main-screen {
+    background-image: url("../img/cards@2x.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
+  }
+}
+
 .main-screen__wrapper {
   position: relative;
   display: flex;
@@ -117,10 +123,17 @@
 
 @media (max-width: 1023px) {
   .main-screen {
+    background-image: url("../img/cards-750.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
     background-position: right -65% bottom 87%, right -50% bottom 98%, right 11% bottom 58%;
     background-size: 60%, 57%, 33%;
 
     margin-top: -20px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .main-screen {
+      background-image: url("../img/cards-750@2x.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
+    }
   }
 
   .main-screen__wrapper {
@@ -180,8 +193,15 @@
 
 @media (max-width: 767px) {
   .main-screen {
-    background-size: 65%,57%,42%;
-    background-position: right -5% bottom 99%,right -6% bottom 94%,right 39% top 27%;
+    background-image: url("../img/cards-320.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
+    background-size: 65%, 57%, 42%;
+    background-position: right -5% bottom 99%, right -6% bottom 94%, right 39% top 27%;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .main-screen {
+      background-image: url("../img/cards-320@2x.png"), url("../img/trianglepoints.svg"), url("../img/trianglepoints-sm.svg");
+    }
   }
 
   .main-screen__wrapper {

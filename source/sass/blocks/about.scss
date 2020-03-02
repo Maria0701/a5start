@@ -17,6 +17,12 @@
   background-position: 5px 44px;
 }
 
+@media (min-resolution: 192dpi) {
+  .about__wrapper {
+    background-image: url("..../img/2005@2x.png");
+  }
+}
+
 .about__header {
   margin-top: 0;
   margin-bottom: 22px;
@@ -72,6 +78,12 @@
     background-image: url("../img/2005-750.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .about__wrapper {
+      background-image: url("..../img/2005-750@2x.png");
+    }
   }
 
   .about__header {
